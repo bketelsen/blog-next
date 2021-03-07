@@ -15,11 +15,9 @@ dependencies:
   postcss: 8.2.7
   preact: 10.5.12
   reading-time: 1.2.1
-  rehype-katex: 4.0.0
   remark-autolink-headings: 6.0.1
   remark-code-titles: 0.1.1
   remark-footnotes: 2.0.0
-  remark-math: 3.0.1
   remark-slug: 6.0.0
   tailwindcss: 2.0.3_f09e2c723cccfa658f05fa992b875ea4
 devDependencies:
@@ -1494,10 +1492,6 @@ packages:
   /@types/json-schema/7.0.7:
     resolution:
       integrity: sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
-  /@types/katex/0.11.0:
-    dev: false
-    resolution:
-      integrity: sha512-27BfE8zASRLYfSBNMk5/+KIjr2CBBrH0i5lhsO04fca4TGirIIMay73v3zNkzqmsaeIa/Mi5kejWDcxPLAmkvA==
   /@types/mdast/3.0.3:
     dependencies:
       '@types/unist': 2.0.3
@@ -4214,6 +4208,7 @@ packages:
     resolution:
       integrity: sha512-jeJUWiN5pSxW12Rh01smtVkZgZr33wBokLzKLwinYOUfSzm1Nl/c3GUGebDyOKjdsRgMvoVbV0VpAcpjF4NrJA==
   /hast-util-is-element/1.1.0:
+    dev: true
     resolution:
       integrity: sha512-oUmNua0bFbdrD/ELDSSEadRVtWZOf3iF6Lbv81naqsIV99RnSCieTbWuWCY8BAeEfKJTKl0gRdokv+dELutHGQ==
   /hast-util-parse-selector/2.2.5:
@@ -4263,14 +4258,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-eK0MxRX47AV2eZ+Lyr18DCpQgodvaS3fAQO2+b9Two9F5HEoRPhiUMNzoXArMJfZi2yieFzUBMRl3HNJ3Jus3w==
-  /hast-util-to-text/2.0.1:
-    dependencies:
-      hast-util-is-element: 1.1.0
-      repeat-string: 1.6.1
-      unist-util-find-after: 3.0.0
-    dev: false
-    resolution:
-      integrity: sha512-8nsgCARfs6VkwH2jJU9b8LNTuR4700na+0h3PqCaEk4MAnMDeu5P0tP8mjk9LLNGxIeQRLbiDbZVw6rku+pYsQ==
   /hast-util-whitespace/1.0.4:
     dev: true
     resolution:
@@ -4903,13 +4890,6 @@ packages:
       node: '>=4.0'
     resolution:
       integrity: sha512-EIsmt3O3ljsU6sot/J4E1zDRxfBNrhjyf/OKjlydwgEimQuznlM4Wv7U+ueONJMyEn1WRE0K8dhi3dVAXYT24Q==
-  /katex/0.12.0:
-    dependencies:
-      commander: 2.20.3
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-y+8btoc/CK70XqcHqjxiGWBOeIL8upbS0peTPXTvgrh21n1RiWWcIpSWM+4uXq+IAgNh9YYQWdc7LVDPDAEEAg==
   /kind-of/3.2.2:
     dependencies:
       is-buffer: 1.1.6
@@ -6657,21 +6637,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-ib77G0uxsA2ovgiYbCVGx4Pv3PSttAx2vIwidqQzbL2U5S4Q+j00HdSAneSBuyVcMvEnTXMjiGgB+DlXozVhpQ==
-  /rehype-katex/4.0.0:
-    dependencies:
-      '@types/katex': 0.11.0
-      hast-util-to-text: 2.0.1
-      katex: 0.12.0
-      rehype-parse: 7.0.1
-      unified: 9.2.0
-      unist-util-visit: 2.0.3
-    dev: false
-    resolution:
-      integrity: sha512-0mgBqYugQyIW0eUl6RDOZ28Cat2YzrnWGaYgKCMQnJw6ClmKgLqXBnkDAPGh2mwxvkkKwQOUMUpSLpA5rt7rzA==
   /rehype-parse/7.0.1:
     dependencies:
       hast-util-from-parse5: 6.0.1
       parse5: 6.0.1
+    dev: true
     resolution:
       integrity: sha512-fOiR9a9xH+Le19i4fGzIEowAbwG7idy2Jzs4mOrFWBSJ0sNUgy0ev871dwWnbOo371SjgjG4pwzrbgSVrKxecw==
   /rehype-stringify/8.0.0:
@@ -6712,10 +6682,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-mSuDd3svCHs+2PyO29h7iijIZx4plX0fheacJcAoYAASfgzgVIcXGYSq9GFyYocFLftQs8IOmmkgtOovs6d4oA==
-  /remark-math/3.0.1:
-    dev: false
-    resolution:
-      integrity: sha512-epT77R/HK0x7NqrWHdSV75uNLwn8g9qTyMqCRCDujL0vj/6T6+yhdrR7mjELWtkse+Fw02kijAaBuVcHBor1+Q==
   /remark-mdx/1.6.22:
     dependencies:
       '@babel/core': 7.12.9
@@ -8016,12 +7982,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-f98yt5pnlMWlzP539tPc4grGMsFaQQlP/vM396b00jngsiINumNmsY8rkXjfoi1c6QaM8nQ3vaGDuoKWbe/1Uw==
-  /unist-util-find-after/3.0.0:
-    dependencies:
-      unist-util-is: 4.0.4
-    dev: false
-    resolution:
-      integrity: sha512-ojlBqfsBftYXExNu3+hHLfJQ/X1jYY/9vdm4yZWjIbf0VuWF6CRufci1ZyoD/wV2TYMKxXUoNuoqwy+CkgzAiQ==
   /unist-util-generated/1.1.6:
     dev: false
     resolution:
@@ -8457,12 +8417,10 @@ specifiers:
   react-strapi-img: ^0.2.3
   reading-time: 1.2.1
   rehype: 11.0.0
-  rehype-katex: ^4.0.0
   remark-autolink-headings: 6.0.1
   remark-code-titles: 0.1.1
   remark-footnotes: ^2.0.0
   remark-frontmatter: 3.0.0
-  remark-math: 3.0.1
   remark-parse: 9.0.0
   remark-slug: 6.0.0
   remark-stringify: 9.0.0

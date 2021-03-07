@@ -35,12 +35,10 @@ export async function getStaticProps({ params }) {
         require('remark-slug'),
         require('remark-autolink-headings'),
         require('remark-code-titles'),
-        require('remark-math'),
         imgToJsx,
       ],
       inlineNotes: true,
       rehypePlugins: [
-        require('rehype-katex'),
         require('@mapbox/rehype-prism'),
         () => {
           return (tree) => {
