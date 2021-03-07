@@ -1,4 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
+import global from '@/data/global'
 import { kebabCase } from '@/lib/utils'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
@@ -17,8 +18,8 @@ export default function Tags({ categories }) {
   return (
     <>
       <PageSeo
-        title={`Tags - ${siteMetadata.author}`}
-        description="Things I blog about"
+        title={`Tags - ${global.writer.name}`}
+        description={global.defaultSeo.metaDescription}
         url={`${siteMetadata.siteUrl}/tags`}
       />
       <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:justify-center md:items-center md:divide-y-0 md:flex-row md:space-x-6 md:mt-24">

@@ -40,7 +40,7 @@ export async function getStaticProps({ params }) {
 
 export default function Tag({ posts, tag }) {
   // Capitalize first letter and convert space to dash
-  const title = `# ${tag.name}`
+  const title = `# ${tag.plural}`
   return (
     <>
       <PageSeo

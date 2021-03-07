@@ -4,8 +4,8 @@ import SectionContainer from '@/components/SectionContainer'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
+import Image from 'next/image'
 
-const editUrl = (fileName) => `${siteMetdata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetdata.siteUrl}/blog/${slug}`)}`
 
@@ -15,7 +15,7 @@ export default function PostLayout({ children, post, next, prev }) {
   const { slug, publishedAt, title, category } = post
   return (
     <SectionContainer>
-      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${slug}`} {...post} />
+      <BlogSeo url={`${siteMetdata.siteUrl}/${category.slug}/${slug}`} post={post} />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
@@ -44,17 +44,17 @@ export default function PostLayout({ children, post, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <img src={siteMetdata.image} alt="avatar" className="w-10 h-10 rounded-full" />
+                    <img src={post.author.picture.url} alt="avatar" className="w-10 h-10 rounded-full" />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
-                      <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
+                      <dd className="text-gray-900 dark:text-gray-100">{post.author.name}</dd>
                       <dt className="sr-only">Twitter</dt>
                       <dd>
                         <Link
-                          href={siteMetdata.twitter}
+                          href={post.author.twitter}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                         >
-                          {siteMetdata.twitter.replace('https://twitter.com/', '@')}
+                          {post.author.twitter.replace('https://twitter.com/', '@')}
                         </Link>
                       </dd>
                     </dl>
@@ -63,7 +63,18 @@ export default function PostLayout({ children, post, next, prev }) {
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">{children}</div>
+              <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">
+                {post.image && 
+                  <Image 
+                    src={post.image.url}
+                    width={post.image.width}
+                    height={post.image.height}
+                    alt={post.image.alt}
+
+                  />
+                }
+                {children}
+              </div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
@@ -98,7 +109,7 @@ export default function PostLayout({ children, post, next, prev }) {
                           Next Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/${prev.category.slug}/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/${next.category.slug}/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
                     )}

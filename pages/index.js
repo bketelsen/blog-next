@@ -2,14 +2,23 @@ import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import articles from '@/data/articles'
+import articles from '@/data/articles' 
+import global from '@/data/global'   
 import { dateSortDesc} from '@/lib/local-strapi'
+import generateRss from '@/lib/generate-rss'
+import path from 'path'
+import fs from 'fs'
+const root = process.cwd()
 
 const MAX_DISPLAY = 5
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
   articles.sort((a, b) => dateSortDesc(a.publishedAt, b.publishedAt))
+  const rss = generateRss(articles, '',`index.xml`)
+  const rssPath = path.join(root, 'public')
+  fs.mkdirSync(rssPath, { recursive: true })
+  fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
   return { props: { articles } }
 }
 
@@ -17,8 +26,8 @@ export default function Home({ articles }) {
   return (
     <>
       <PageSeo
-        title={siteMetadata.title}
-        description={siteMetadata.description}
+        title={global.defaultSeo.metaTitle}
+        description={global.defaultSeo.metaDescription}
         url={siteMetadata.siteUrl}
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -27,7 +36,7 @@ export default function Home({ articles }) {
             Latest
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
+          {global.defaultSeo.metaTitle}
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -51,7 +60,7 @@ export default function Home({ articles }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/${category.slug}/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -69,7 +78,7 @@ export default function Home({ articles }) {
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/blog/${slug}`}
+                          href={`/${category.slug}/${slug}`}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                           aria-label={`Read "${title}"`}
                         >

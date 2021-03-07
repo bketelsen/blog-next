@@ -6,16 +6,18 @@ import PageTitle from '@/components/PageTitle'
 import categories from '@/data/categories'
 import articles from '@/data/articles'
 import { dateSortDesc} from '@/lib/local-strapi'
-import imgToJsx from '../../lib/img-to-jsx'
+import imgToJsx from '../lib/img-to-jsx'
 const visit = require('unist-util-visit')
 
 
 export async function getStaticPaths() {
-
+  articles.sort((a, b) => dateSortDesc(a.publishedAt, b.publishedAt))
+  const filteredPosts = articles.filter(
+    (article) =>  article.category.slug === 'page'
+  )
   return {
     paths: articles.map((p) => ({
       params: {
-        category: p.category.slug,
         slug: p.slug,
       },
     })),

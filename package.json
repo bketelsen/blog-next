@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./scripts/data.js && next dev",
-    "dev": "node ./scripts/data.js && next dev",
-    "build": "node ./scripts/data.js && next build && node ./scripts/generate-sitemap",
-    "serve": "node ./scripts/data.js && next start",
-    "analyze": "ANALYZE=true node ./scripts/data.js && next build"
+    "start": "node ./scripts/data.mjs && next dev",
+    "dev": "node ./scripts/data.mjs && next dev",
+    "build": "node ./scripts/data.mjs && next build && node ./scripts/generate-sitemap",
+    "serve": "node ./scripts/data.mjs && next start",
+    "analyze": "ANALYZE=true node ./scripts/data.mjs && next build"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
@@ -25,8 +25,6 @@
     "next-themes": "^0.0.10",
     "postcss": "^8.2.1",
     "preact": "^10.5.7",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
     "reading-time": "1.2.1",
     "rehype-katex": "^4.0.0",
     "remark-autolink-headings": "6.0.1",
@@ -53,11 +51,15 @@
     "next-compose-plugins": "^2.2.1",
     "node-fetch": "^2.6.1",
     "prettier": "2.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-strapi-img": "^0.2.3",
     "rehype": "11.0.0",
     "remark-frontmatter": "3.0.0",
     "remark-parse": "9.0.0",
     "remark-stringify": "9.0.0",
     "request": "^2.88.2",
+    "styled-components": "^5.2.1",
     "unified": "9.2.0",
     "unist-util-visit": "2.0.3"
   },
