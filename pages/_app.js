@@ -9,18 +9,21 @@ import { SEO } from '@/components/SEO'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
 
-export default function App({ Component, pageProps }) {
+
+function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <MDXProvider components={MDXComponents}>
-        <Head>
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-        </Head>
-        <DefaultSeo {...SEO} />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
-      </MDXProvider>
-    </ThemeProvider>
+      <ThemeProvider attribute="class">
+        <MDXProvider components={MDXComponents}>
+          <Head>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+          </Head>
+          <DefaultSeo {...SEO} />
+          <LayoutWrapper>
+            <Component {...pageProps} />
+          </LayoutWrapper>
+        </MDXProvider>
+      </ThemeProvider>
   )
 }
+
+export default MyApp;

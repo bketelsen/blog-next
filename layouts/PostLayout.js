@@ -11,11 +11,11 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+export default function PostLayout({ children, post, next, prev }) {
+  const { slug, publishedAt, title, category } = post
   return (
     <SectionContainer>
-      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
+      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${slug}`} {...post} />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-6">
@@ -24,8 +24,8 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 <div>
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
+                    <time dateTime={publishedAt}>
+                      {new Date(publishedAt).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>
@@ -63,29 +63,23 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
+              <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
                 <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
-                {tags && (
                   <div className="py-4 xl:py-8">
                     <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                      Tags
+                      Category
                     </h2>
                     <div className="flex flex-wrap">
-                      {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
-                      ))}
+                        <Tag key={category.slug} text={category.name} slug={category.slug} />
                     </div>
                   </div>
-                )}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
@@ -94,7 +88,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Previous Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
+                          <Link href={`/${prev.category.slug}/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
@@ -104,7 +98,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           Next Article
                         </h2>
                         <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                          <Link href={`/blog/${next.slug}`}>{next.title}</Link>
+                          <Link href={`/${prev.category.slug}/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
                     )}
@@ -113,10 +107,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
-                  href="/blog"
+                  href="/${prev.category.slug}"
                   className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                 >
-                  &larr; Back to the blog
+                  &larr; Back
                 </Link>
               </div>
             </footer>

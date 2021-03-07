@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import { kebabCase } from '@/lib/utils'
 
-const Tag = ({ text }) => {
+const Tag = ({ slug, text }) => {
   return (
-    <Link href={`/tags/${kebabCase(text)}`}>
+    <Link href={`/tags/${slug}`}>
       <a className="mr-3 text-sm font-medium text-blue-500 uppercase hover:text-blue-600 dark:hover:text-blue-400">
-        {text.split(' ').join('-')}
+        {text}
       </a>
     </Link>
   )

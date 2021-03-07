@@ -1,18 +1,19 @@
 import siteMetadata from '@/data/siteMetadata'
 import { kebabCase } from '@/lib/utils'
-import { getAllTags } from '@/lib/tags'
 import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
+import categories from '@/data/categories'
+import { sortOn } from '@/lib/local-strapi'
+
 
 export async function getStaticProps() {
-  const tags = await getAllTags('blog')
-
-  return { props: { tags } }
+  sortOn(categories,  "name")
+  return { props: { categories } }
 }
 
-export default function Tags({ tags }) {
-  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
+export default function Tags({ categories }) {
+  //const sortedTags = tags.sort((a, b) => tags[b] - tags[a])
   return (
     <>
       <PageSeo
@@ -27,19 +28,23 @@ export default function Tags({ tags }) {
           </h1>
         </div>
         <div className="flex flex-wrap max-w-lg">
-          {Object.keys(tags).length === 0 && 'No tags found.'}
-          {sortedTags.map((t) => {
+          {Object.keys(categories).length === 0 && 'No tags found.'}
+          {categories.map((t) => {
+            if (t.articles.length > 0 ) {
             return (
-              <div key={t} className="mt-2 mb-2 mr-5">
-                <Tag text={t} />
+               
+              <div key={t.slug} className="mt-2 mb-2 mr-5">
+                <Tag text={t.name} slug={t.slug} />
                 <Link
-                  href={`/tags/${kebabCase(t)}`}
+                  href={`/tags/${t.slug}`}
                   className="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
                 >
-                  {` (${tags[t]})`}
+                  {` (${t.articles.length})`}
                 </Link>
               </div>
+            
             )
+            }
           })}
         </div>
       </div>

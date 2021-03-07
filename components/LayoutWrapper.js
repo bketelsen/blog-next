@@ -6,6 +6,9 @@ import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import categories from '@/data/categories'
+
+
 
 const LayoutWrapper = ({ children }) => {
   return (

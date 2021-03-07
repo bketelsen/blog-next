@@ -47,9 +47,9 @@ export const PageSeo = ({ title, description, url }) => {
   )
 }
 
-export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] }) => {
-  const publishedAt = new Date(date).toISOString()
-  const modifiedAt = new Date(lastmod || date).toISOString()
+export const BlogSeo = ({ title, summary, publishedAt, lastmod, url, tags, images = [] }) => {
+  const pubDate = new Date(publishedAt).toISOString()
+  const modifiedAt = new Date(lastmod || pubDate).toISOString()
   let imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]

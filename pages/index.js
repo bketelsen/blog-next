@@ -2,20 +2,18 @@ import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import { getFile } from '@/lib/local-strapi'
+import articles from '@/data/articles'
+import { dateSortDesc} from '@/lib/local-strapi'
 
 const MAX_DISPLAY = 5
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-  const articles = await getFile('articles.json')
-  console.log(articles)
-  return { props: { posts,articles } }
+  articles.sort((a, b) => dateSortDesc(a.publishedAt, b.publishedAt))
+  return { props: { articles } }
 }
 
-export default function Home({ posts }) {
+export default function Home({ articles }) {
   return (
     <>
       <PageSeo
@@ -33,9 +31,9 @@ export default function Home({ posts }) {
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
+          {!articles.length && 'No posts found.'}
+          {articles.slice(0, MAX_DISPLAY).map((article) => {
+            const { slug, publishedAt, title, description, category   } = article
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -43,8 +41,8 @@ export default function Home({ posts }) {
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>
-                          {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                        <time dateTime={publishedAt}>
+                          {new Date(publishedAt).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                         </time>
                       </dd>
                     </dl>
@@ -60,13 +58,13 @@ export default function Home({ posts }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
+                           
+                              <Tag key={category.slug} slug={category.slug} text={category.name} />
+                         
                           </div>
                         </div>
                         <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                          {summary}
+                          {description}
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
@@ -86,7 +84,7 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {articles.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
             href="/blog"
