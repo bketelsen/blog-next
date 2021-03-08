@@ -13,13 +13,26 @@ export default function Subscribe() {
             </p>
           </div>
           <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
-            <form className="sm:flex">
+            <form
+              className="sm:flex"
+              method="post"
+              action="https://list.brian.dev/subscription/form"
+            >
               <label htmlFor="emailAddress" className="sr-only">
                 Email address
               </label>
               <input
+                id="1c22a"
+                type="hidden"
+                name="l"
+                readOnly
+                checked
+                value="1c22acb4-be44-4035-95f4-2ef976efa536"
+              />
+
+              <input
                 id="emailAddress"
-                name="emailAddress"
+                name="email"
                 type="email"
                 autoComplete="email"
                 required
