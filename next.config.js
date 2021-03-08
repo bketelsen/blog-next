@@ -1,3 +1,5 @@
+const generateSitemap = require('./scripts/generate-sitemap')
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -25,7 +27,9 @@ module.exports = withBundleAnalyzer({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
-
+    if (isServer) {
+      generateSitemap()
+    }
     if (!dev && !isServer) {
       // Replace React with Preact only in client production build
       Object.assign(config.resolve.alias, {

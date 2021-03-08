@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./scripts/data.mjs && next dev",
     "dev": "node ./scripts/data.mjs && next dev",
-    "build": "node ./scripts/data.mjs && next build && node ./scripts/generate-sitemap",
+    "build": "node ./scripts/data.mjs && next build",
     "serve": "node ./scripts/data.mjs && next start",
     "analyze": "ANALYZE=true node ./scripts/data.mjs && next build"
   },

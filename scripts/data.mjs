@@ -1,4 +1,3 @@
-import fetch from 'node-fetch';
 import fs from 'fs';
 import getData from './getData.mjs';
 
@@ -48,25 +47,3 @@ fs.readFile("data/global.json", function (err, data) {
 
 
 });
-
-
-/*
-
-import writers from '../data/writers.json';
-
-writers.forEach(writer => {
-    console.log("fetching image: ",writer.picture.url)
-    var url = `https://content.brian.dev${writer.picture.url}`
-    https.request(url, function(response) {
-      var data = new Stream();
-
-      response.on('data', function(chunk) {
-        data.push(chunk);
-      });
-
-      response.on('end', function() {
-        fs.writeFileSync(`./public${writer.picture.url}`, data.read());
-      });
-    }).end();
-});
-*/
