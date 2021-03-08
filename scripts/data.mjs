@@ -19,6 +19,7 @@ fs.readFile("data/articles.json", function (err, data) {
   const articles = JSON.parse(data);
   articles.forEach(article => {
     getData(article.image.url, `./public${article.image.url}`)
+    getData(article.seo.shareImage.url, `./public${article.seo.shareImage.url}`)
   })
 
 });
@@ -35,6 +36,18 @@ fs.readFile("data/writers.json", function (err, data) {
 
 });
 
+fs.readFile("data/global.json", function (err, data) {
+
+  // Check for errors 
+  if (err) throw err;
+
+  // Converting to JSON 
+  const global = JSON.parse(data);
+
+  getData(global.defaultSeo.shareImage.url, `./public${global.defaultSeo.shareImage.url}`)
+
+
+});
 
 
 /*
