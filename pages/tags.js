@@ -1,15 +1,14 @@
-import siteMetadata from '@/data/siteMetadata'
-import global from '@/data/global'
-import { kebabCase } from '@/lib/utils'
-import Tag from '@/components/Tag'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
+import Tag from '@/components/Tag'
 import categories from '@/data/categories'
+import global from '@/data/global'
+import { kebabCase } from '@/lib/utils'
+import siteMetadata from '@/data/siteMetadata'
 import { sortOn } from '@/lib/local-strapi'
 
-
 export async function getStaticProps() {
-  sortOn(categories,  "name")
+  sortOn(categories, 'name')
   return { props: { categories } }
 }
 
@@ -31,20 +30,18 @@ export default function Tags({ categories }) {
         <div className="flex flex-wrap max-w-lg">
           {Object.keys(categories).length === 0 && 'No tags found.'}
           {categories.map((t) => {
-            if (t.articles.length > 0 ) {
-            return (
-               
-              <div key={t.slug} className="mt-2 mb-2 mr-5">
-                <Tag text={t.name} slug={t.slug} />
-                <Link
-                  href={`/tags/${t.slug}`}
-                  className="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
-                >
-                  {` (${t.articles.length})`}
-                </Link>
-              </div>
-            
-            )
+            if (t.articles.length > 0) {
+              return (
+                <div key={t.slug} className="mt-2 mb-2 mr-5">
+                  <Tag text={t.name} slug={t.slug} />
+                  <Link
+                    href={`/tags/${t.slug}`}
+                    className="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
+                  >
+                    {` (${t.articles.length})`}
+                  </Link>
+                </div>
+              )
             }
           })}
         </div>
