@@ -1,5 +1,6 @@
 import { getGlobal, getSortedArticles } from '@/lib/data'
 
+import Category from '@/components/Category'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
@@ -71,7 +72,15 @@ export default function Home({ global, articles }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            <Tag key={category.slug} slug={category.slug} text={category.name} />
+                            <Category
+                              key={category.slug}
+                              slug={category.slug}
+                              text={category.name}
+                            />
+                            {article.tags.length > 0 &&
+                              article.tags.map((tag) => (
+                                <Tag key={tag} text={tag.name} slug={tag.slug} />
+                              ))}
                           </div>
                         </div>
                         <div className="prose text-gray-500 max-w-none dark:text-gray-400">
