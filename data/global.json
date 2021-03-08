@@ -1,1 +1,461 @@
-{"id":1,"siteName":"Brian Ketelsen","created_at":"2021-03-04T21:41:59.000Z","updated_at":"2021-03-07T13:37:18.000Z","writer":{"id":3,"name":"Brian Ketelsen","email":"mail@bjk.fyi","created_at":"2021-03-07T11:06:53.000Z","updated_at":"2021-03-07T14:23:55.000Z","twitter":"https://twitter.com/bketelsen","youtube":"https://youtube.com/bketelsen","github":"https://github.com/bketelsen","linkedin":"https://linkedin.com/bketelsen","twitch":"https://twitch.tv/bketelsen","jobtitle":"Principle Cloud Developer Advocate","company":"Microsoft","bio":"##  My Checkered Past\n\nblah blah\n\n## Plans\n\nWorld Domination","picture":{"id":12,"name":"bri.png","alternativeText":"Avatar of Brian Ketelsen as Captain America","caption":"","width":1234,"height":1459,"formats":{"400":[{"name":"400_bri.png","hash":"400_bri_8c0d5c702a","ext":".png","mime":"image/png","width":400,"height":473,"size":105.87,"path":null,"url":"/uploads/400_bri_8c0d5c702a.png"},{"name":"400_bri.webp","hash":"400_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":400,"height":473,"size":24.5,"path":null,"url":"/uploads/400_bri_8c0d5c702a.webp"}],"600":[{"name":"600_bri.png","hash":"600_bri_8c0d5c702a","ext":".png","mime":"image/png","width":600,"height":709,"size":182.65,"path":null,"url":"/uploads/600_bri_8c0d5c702a.png"},{"name":"600_bri.webp","hash":"600_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":600,"height":709,"size":39.4,"path":null,"url":"/uploads/600_bri_8c0d5c702a.webp"}],"800":[{"name":"800_bri.png","hash":"800_bri_8c0d5c702a","ext":".png","mime":"image/png","width":800,"height":946,"size":270.93,"path":null,"url":"/uploads/800_bri_8c0d5c702a.png"},{"name":"800_bri.webp","hash":"800_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":800,"height":946,"size":54.5,"path":null,"url":"/uploads/800_bri_8c0d5c702a.webp"}],"1000":[{"name":"1000_bri.png","hash":"1000_bri_8c0d5c702a","ext":".png","mime":"image/png","width":1000,"height":1182,"size":367.19,"path":null,"url":"/uploads/1000_bri_8c0d5c702a.png"},{"name":"1000_bri.webp","hash":"1000_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":1000,"height":1182,"size":68.17,"path":null,"url":"/uploads/1000_bri_8c0d5c702a.webp"}],"1200":[{"name":"1200_bri.png","hash":"1200_bri_8c0d5c702a","ext":".png","mime":"image/png","width":1200,"height":1419,"size":467.09,"path":null,"url":"/uploads/1200_bri_8c0d5c702a.png"},{"name":"1200_bri.webp","hash":"1200_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":1200,"height":1419,"size":83.45,"path":null,"url":"/uploads/1200_bri_8c0d5c702a.webp"}],"1234":[{"name":"1234_bri.png","hash":"1234_bri_8c0d5c702a","ext":".png","mime":"image/png","width":1234,"height":1459,"size":134.65,"path":null,"url":"/uploads/1234_bri_8c0d5c702a.png"},{"name":"1234_bri.webp","hash":"1234_bri_8c0d5c702a","ext":".webp","mime":"image/webp","width":1234,"height":1459,"size":71.93,"path":null,"url":"/uploads/1234_bri_8c0d5c702a.webp"}],"base64":{"url":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEx0lEQVQ4y0WTe2zTVRTH7zYjBCWQFLfRrbS/9+/X0nVb23X99b11faztquzRjb2o29hWtm7de1NgIhIXM2DIyyDGwGJAEBLUoOATVBJRA38gJv6hJipIjAaJ4dH2Hn8dkd3k5pxz77mf+z33gZDUtBoNWrVqFaJIIisTy+XyFZZy0/tul/O+3SImDaUlf1vM5Z/otFqxyuVEGze0L+Q9uXw5etSM+lKUn5+Pgj5PlstmRRqB76p02KE2XIM72lqhLhwCp9UCLrsNBI6rLdHpUJlBny2TyRYhFEmimW3TaOaFrRngbpPReEeWm5fS6w3Y6XBgn8eLnU7nPbOpDHiOvTg52I+Ov3EIyVevXoTwHJe1dOmSjCvzut13KiQVO/qj6WMzz0G8tQEmOlvw7on+tNsmQpnBcIOnKZlKqUQcy2Q9gqgFHi1btgzxSvlK0Sz+OdjeCHDlbBquf4zh6gcYrp3P9PSZXdMgms23LcbSPJphpLNUL0IIknrkc4Lmu476MGzpbkntiHfAzQ/n4bXNgzAWjaT2TPSBTTRfBYCFXEGtWSxnoHkd+nF+BkmT2dHa4LevjsfgvSOH0pOjI/iH43vgxdEhvH92p6RkKzSHfD8lmkJ5m6N1qEo0LioZj0aQXLqdiMf2+L7JvpsHpvrgxuenU799+g78de4I/PPVGfj9wpn0+f0vwUTHehxvCpNj7XUo4BAXIYqCAnR0+1jWUHsE1ftcdYm2hjsPvjwJp2e34NHOVrxrNIbvXnwbH54eBlOxdnzlU3loqrM5q9Ff8RCQmy9HqOdhjZdPvpl9aX4vqrRZTl0/eRDenduWPPHK83B4eiR9+egc9Lc2/Pr/xtoi3YLNK1BKkNxcpGQ02erqvpzM4BpGLSUUj7w8HINbH72VvHbiAL51bj51YnYr2G3WzyrdVQuL6fKax1YrWSSn1iK0Ye8lpKTVSAgMoBU5aKVcxVhUaxTnRXM5NNfXpjtb1+OeaCt+JhwGfWnp3TWFBQdlS9AThFiHMi9LxetykK97BypU0SHC4N9Hu9p+UVA8qFQE0LZGbHBHwOFdB6I3Ajp/FyZNIVAp5FBIr/1ZZQxMSYwlKka6ZoLXHaM0emAr2oFxtAClUmCyxJVSh8eADw5h0t2DWX8c88GEFCcwwWmTNKsGzrcJSFPw+0IlEUNssSVFF5nSrLsrSRs9aZpUYbaqC9TSAsqzCWtcTUC5u4GvjmMhNIIZax0whCLNutqSrOVpIHkdIEZrPMSYQ8AHEg9otQ7oYhsWasYw5YqCN9IDO3fNQbilF5iKKHBeSVXVRkxxGmDLfPczQFpT+joiiywE5+39lw0kgOK1D1hnC9bUDGOVuxc394zifXOzODY0hYnKbiz4eiVFA5g2SoASO0iKbxM0RyPW1oA4f19YH+wCqsgCvL8vzXt7koxUnuBsShkCnSnBXp9ifZuSQmAwKYSGQSoFSJ3tD6F22sC6n0Wocl1Htq99HI3HWso11vAFLjAo7dYPvLcXuOoBINwbgfX3g/QEMueSsfd4X+xoAa1VUpZ6RGjFHBTd+zUyNm7OibY1I2e29DMDcVFK3iYEE6d4T/cXVqHsitba8A0XHDorVMcnpTmG83QjhWBEtL0pR6lzoP8AA03k/VlvKHMAAAAASUVORK5CYII=","width":17,"height":20}},"hash":"bri_8c0d5c702a","ext":".png","mime":"image/png","size":134.65,"url":"/uploads/bri_8c0d5c702a.png","previewUrl":null,"provider":"local","provider_metadata":null,"created_at":"2021-03-07T11:06:14.000Z","updated_at":"2021-03-07T11:06:41.000Z"}},"defaultSeo":{"id":2,"metaTitle":"News from the Edge","metaDescription":"The home of Brian Ketelsen on the internet.","shareImage":{"id":11,"name":"default-image.png","alternativeText":null,"caption":null,"width":1208,"height":715,"formats":{"thumbnail":{"name":"thumbnail_default-image.png","hash":"thumbnail_default_image_43d044460b","ext":".png","mime":"image/png","width":245,"height":145,"size":27.5,"path":null,"url":"/uploads/thumbnail_default_image_43d044460b.png"},"large":{"name":"large_default-image.png","hash":"large_default_image_43d044460b","ext":".png","mime":"image/png","width":1000,"height":592,"size":430.73,"path":null,"url":"/uploads/large_default_image_43d044460b.png"},"medium":{"name":"medium_default-image.png","hash":"medium_default_image_43d044460b","ext":".png","mime":"image/png","width":750,"height":444,"size":254.04,"path":null,"url":"/uploads/medium_default_image_43d044460b.png"},"small":{"name":"small_default-image.png","hash":"small_default_image_43d044460b","ext":".png","mime":"image/png","width":500,"height":296,"size":114.88,"path":null,"url":"/uploads/small_default_image_43d044460b.png"}},"hash":"default_image_43d044460b","ext":".png","mime":"image/png","size":295.98,"url":"/uploads/default_image_43d044460b.png","previewUrl":null,"provider":"local","provider_metadata":null,"created_at":"2021-03-04T21:42:00.000Z","updated_at":"2021-03-04T21:42:00.000Z"}},"favicon":{"id":10,"name":"favicon.png","alternativeText":null,"caption":null,"width":512,"height":512,"formats":{"thumbnail":{"name":"thumbnail_favicon.png","hash":"thumbnail_favicon_a8c30e4b77","ext":".png","mime":"image/png","width":156,"height":156,"size":5.86,"path":null,"url":"/uploads/thumbnail_favicon_a8c30e4b77.png"},"small":{"name":"small_favicon.png","hash":"small_favicon_a8c30e4b77","ext":".png","mime":"image/png","width":500,"height":500,"size":25.52,"path":null,"url":"/uploads/small_favicon_a8c30e4b77.png"}},"hash":"favicon_a8c30e4b77","ext":".png","mime":"image/png","size":5.26,"url":"/uploads/favicon_a8c30e4b77.png","previewUrl":null,"provider":"local","provider_metadata":null,"created_at":"2021-03-04T21:41:59.000Z","updated_at":"2021-03-04T21:41:59.000Z"}}
+{
+  "id": 1,
+  "siteName": "Brian Ketelsen",
+  "created_at": "2021-03-04T21:41:59.000Z",
+  "updated_at": "2021-03-07T23:56:41.000Z",
+  "writer": {
+    "id": 3,
+    "name": "Brian Ketelsen",
+    "email": "mail@bjk.fyi",
+    "created_at": "2021-03-07T11:06:53.000Z",
+    "updated_at": "2021-03-07T14:23:55.000Z",
+    "twitter": "https://twitter.com/bketelsen",
+    "youtube": "https://youtube.com/bketelsen",
+    "github": "https://github.com/bketelsen",
+    "linkedin": "https://linkedin.com/bketelsen",
+    "twitch": "https://twitch.tv/bketelsen",
+    "jobtitle": "Principle Cloud Developer Advocate",
+    "company": "Microsoft",
+    "bio": "##  My Checkered Past\n\nblah blah\n\n## Plans\n\nWorld Domination",
+    "picture": {
+      "id": 12,
+      "name": "bri.png",
+      "alternativeText": "Avatar of Brian Ketelsen as Captain America",
+      "caption": "",
+      "width": 1234,
+      "height": 1459,
+      "formats": {
+        "400": [
+          {
+            "name": "400_bri.png",
+            "hash": "400_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 400,
+            "height": 473,
+            "size": 105.87,
+            "path": null,
+            "url": "/uploads/400_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "400_bri.webp",
+            "hash": "400_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 400,
+            "height": 473,
+            "size": 24.5,
+            "path": null,
+            "url": "/uploads/400_bri_8c0d5c702a.webp"
+          }
+        ],
+        "600": [
+          {
+            "name": "600_bri.png",
+            "hash": "600_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 600,
+            "height": 709,
+            "size": 182.65,
+            "path": null,
+            "url": "/uploads/600_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "600_bri.webp",
+            "hash": "600_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 600,
+            "height": 709,
+            "size": 39.4,
+            "path": null,
+            "url": "/uploads/600_bri_8c0d5c702a.webp"
+          }
+        ],
+        "800": [
+          {
+            "name": "800_bri.png",
+            "hash": "800_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 800,
+            "height": 946,
+            "size": 270.93,
+            "path": null,
+            "url": "/uploads/800_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "800_bri.webp",
+            "hash": "800_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 800,
+            "height": 946,
+            "size": 54.5,
+            "path": null,
+            "url": "/uploads/800_bri_8c0d5c702a.webp"
+          }
+        ],
+        "1000": [
+          {
+            "name": "1000_bri.png",
+            "hash": "1000_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1000,
+            "height": 1182,
+            "size": 367.19,
+            "path": null,
+            "url": "/uploads/1000_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "1000_bri.webp",
+            "hash": "1000_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1000,
+            "height": 1182,
+            "size": 68.17,
+            "path": null,
+            "url": "/uploads/1000_bri_8c0d5c702a.webp"
+          }
+        ],
+        "1200": [
+          {
+            "name": "1200_bri.png",
+            "hash": "1200_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1200,
+            "height": 1419,
+            "size": 467.09,
+            "path": null,
+            "url": "/uploads/1200_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "1200_bri.webp",
+            "hash": "1200_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1200,
+            "height": 1419,
+            "size": 83.45,
+            "path": null,
+            "url": "/uploads/1200_bri_8c0d5c702a.webp"
+          }
+        ],
+        "1234": [
+          {
+            "name": "1234_bri.png",
+            "hash": "1234_bri_8c0d5c702a",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1234,
+            "height": 1459,
+            "size": 134.65,
+            "path": null,
+            "url": "/uploads/1234_bri_8c0d5c702a.png"
+          },
+          {
+            "name": "1234_bri.webp",
+            "hash": "1234_bri_8c0d5c702a",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1234,
+            "height": 1459,
+            "size": 71.93,
+            "path": null,
+            "url": "/uploads/1234_bri_8c0d5c702a.webp"
+          }
+        ],
+        "base64": {
+          "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEx0lEQVQ4y0WTe2zTVRTH7zYjBCWQFLfRrbS/9+/X0nVb23X99b11faztquzRjb2o29hWtm7de1NgIhIXM2DIyyDGwGJAEBLUoOATVBJRA38gJv6hJipIjAaJ4dH2Hn8dkd3k5pxz77mf+z33gZDUtBoNWrVqFaJIIisTy+XyFZZy0/tul/O+3SImDaUlf1vM5Z/otFqxyuVEGze0L+Q9uXw5etSM+lKUn5+Pgj5PlstmRRqB76p02KE2XIM72lqhLhwCp9UCLrsNBI6rLdHpUJlBny2TyRYhFEmimW3TaOaFrRngbpPReEeWm5fS6w3Y6XBgn8eLnU7nPbOpDHiOvTg52I+Ov3EIyVevXoTwHJe1dOmSjCvzut13KiQVO/qj6WMzz0G8tQEmOlvw7on+tNsmQpnBcIOnKZlKqUQcy2Q9gqgFHi1btgzxSvlK0Sz+OdjeCHDlbBquf4zh6gcYrp3P9PSZXdMgms23LcbSPJphpLNUL0IIknrkc4Lmu476MGzpbkntiHfAzQ/n4bXNgzAWjaT2TPSBTTRfBYCFXEGtWSxnoHkd+nF+BkmT2dHa4LevjsfgvSOH0pOjI/iH43vgxdEhvH92p6RkKzSHfD8lmkJ5m6N1qEo0LioZj0aQXLqdiMf2+L7JvpsHpvrgxuenU799+g78de4I/PPVGfj9wpn0+f0vwUTHehxvCpNj7XUo4BAXIYqCAnR0+1jWUHsE1ftcdYm2hjsPvjwJp2e34NHOVrxrNIbvXnwbH54eBlOxdnzlU3loqrM5q9Ff8RCQmy9HqOdhjZdPvpl9aX4vqrRZTl0/eRDenduWPPHK83B4eiR9+egc9Lc2/Pr/xtoi3YLNK1BKkNxcpGQ02erqvpzM4BpGLSUUj7w8HINbH72VvHbiAL51bj51YnYr2G3WzyrdVQuL6fKax1YrWSSn1iK0Ye8lpKTVSAgMoBU5aKVcxVhUaxTnRXM5NNfXpjtb1+OeaCt+JhwGfWnp3TWFBQdlS9AThFiHMi9LxetykK97BypU0SHC4N9Hu9p+UVA8qFQE0LZGbHBHwOFdB6I3Ajp/FyZNIVAp5FBIr/1ZZQxMSYwlKka6ZoLXHaM0emAr2oFxtAClUmCyxJVSh8eADw5h0t2DWX8c88GEFCcwwWmTNKsGzrcJSFPw+0IlEUNssSVFF5nSrLsrSRs9aZpUYbaqC9TSAsqzCWtcTUC5u4GvjmMhNIIZax0whCLNutqSrOVpIHkdIEZrPMSYQ8AHEg9otQ7oYhsWasYw5YqCN9IDO3fNQbilF5iKKHBeSVXVRkxxGmDLfPczQFpT+joiiywE5+39lw0kgOK1D1hnC9bUDGOVuxc394zifXOzODY0hYnKbiz4eiVFA5g2SoASO0iKbxM0RyPW1oA4f19YH+wCqsgCvL8vzXt7koxUnuBsShkCnSnBXp9ifZuSQmAwKYSGQSoFSJ3tD6F22sC6n0Wocl1Htq99HI3HWso11vAFLjAo7dYPvLcXuOoBINwbgfX3g/QEMueSsfd4X+xoAa1VUpZ6RGjFHBTd+zUyNm7OibY1I2e29DMDcVFK3iYEE6d4T/cXVqHsitba8A0XHDorVMcnpTmG83QjhWBEtL0pR6lzoP8AA03k/VlvKHMAAAAASUVORK5CYII=",
+          "width": 17,
+          "height": 20
+        }
+      },
+      "hash": "bri_8c0d5c702a",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 134.65,
+      "url": "/uploads/bri_8c0d5c702a.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-07T11:06:14.000Z",
+      "updated_at": "2021-03-07T11:06:41.000Z"
+    }
+  },
+  "defaultSeo": {
+    "id": 2,
+    "metaTitle": "News from the Edge",
+    "metaDescription": "The home of Brian Ketelsen on the internet.",
+    "shareImage": {
+      "id": 14,
+      "name": "social-banner.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1600,
+      "height": 900,
+      "formats": {
+        "400": [
+          {
+            "name": "400_social-banner.png",
+            "hash": "400_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 400,
+            "height": 225,
+            "size": 111.21,
+            "path": null,
+            "url": "/uploads/400_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "400_social-banner.webp",
+            "hash": "400_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 400,
+            "height": 225,
+            "size": 5.18,
+            "path": null,
+            "url": "/uploads/400_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "600": [
+          {
+            "name": "600_social-banner.png",
+            "hash": "600_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 600,
+            "height": 338,
+            "size": 234.47,
+            "path": null,
+            "url": "/uploads/600_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "600_social-banner.webp",
+            "hash": "600_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 600,
+            "height": 338,
+            "size": 9.37,
+            "path": null,
+            "url": "/uploads/600_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "800": [
+          {
+            "name": "800_social-banner.png",
+            "hash": "800_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 800,
+            "height": 450,
+            "size": 394.6,
+            "path": null,
+            "url": "/uploads/800_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "800_social-banner.webp",
+            "hash": "800_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 800,
+            "height": 450,
+            "size": 13.63,
+            "path": null,
+            "url": "/uploads/800_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "1000": [
+          {
+            "name": "1000_social-banner.png",
+            "hash": "1000_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1000,
+            "height": 563,
+            "size": 594.65,
+            "path": null,
+            "url": "/uploads/1000_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "1000_social-banner.webp",
+            "hash": "1000_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1000,
+            "height": 563,
+            "size": 18.04,
+            "path": null,
+            "url": "/uploads/1000_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "1200": [
+          {
+            "name": "1200_social-banner.png",
+            "hash": "1200_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1200,
+            "height": 675,
+            "size": 838.52,
+            "path": null,
+            "url": "/uploads/1200_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "1200_social-banner.webp",
+            "hash": "1200_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1200,
+            "height": 675,
+            "size": 22.67,
+            "path": null,
+            "url": "/uploads/1200_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "1400": [
+          {
+            "name": "1400_social-banner.png",
+            "hash": "1400_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1400,
+            "height": 788,
+            "size": 1115.91,
+            "path": null,
+            "url": "/uploads/1400_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "1400_social-banner.webp",
+            "hash": "1400_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1400,
+            "height": 788,
+            "size": 27.36,
+            "path": null,
+            "url": "/uploads/1400_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "1600": [
+          {
+            "name": "1600_social-banner.png",
+            "hash": "1600_social_banner_df30a9d4b7",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1600,
+            "height": 900,
+            "size": 1168.6,
+            "path": null,
+            "url": "/uploads/1600_social_banner_df30a9d4b7.png"
+          },
+          {
+            "name": "1600_social-banner.webp",
+            "hash": "1600_social_banner_df30a9d4b7",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1600,
+            "height": 900,
+            "size": 33.46,
+            "path": null,
+            "url": "/uploads/1600_social_banner_df30a9d4b7.webp"
+          }
+        ],
+        "base64": {
+          "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIklEQVQoz1VTy2oUQRTtej860z0z6Ynj+Mi0kkQMRgmSnaIgZCFRRA1EFyqulEFEsxDRdT5AcJGFCzc+0JU7f+54qmYm6uJQ1bfvPffcRxXGeSQoF6CEgV1tYd48hnz9AOrVHszze3CTXVjCTO5D0pbs8e0jVOfH0EUBISWEECh4L6SQkFJBKw3FU9KYnBQxvxczqBmSzc7uiUwmQklCkaHIngyaUFNokyGNJZHEaHkdm1vb/I4QKv2jPZ3JV8yJZom1dZRJdSQwSWEGv5WF0T4TXrm0hf27LFlHVmEJB8n2yCyCYv6potCJiNDM6FIfmd1QSQh9dBYGMLbCxXYFk51b0KbKQVoH+ocpuZqSFvMeJoXOR3gfiAhrSsTYoKpHGDTLKMxxPHvxHocfDlEtnsXNa3eYqKGIQN+YKxNK/lWYFAlmSaVallnSudc/iaY5jWbQYtxu4seXX9h/d4DRUoufBx+x1D+Rq4ihhmRs7t+8j0eDIHtVL+JMu45ud4ThsRbNcAXXL1/Ft09fcXv3Kfvmce7UGMHXrKIL7zpZSJ5wUpcIFSdpuYcp05jOF1Y3UHaG6PVGqKsBXBzg8/ffePjkJYN8VuYTYejB2TKLKeaTznuouINaZ9JyoUNn9rDswoWKPXIIscaN7R2srW1wKDH321gORDnC/D+QTJjWhHtoOZSQCMsFBljeeYYIbW12lAzyIfBVuTwIqabLfPRCiun5B0HNB8X6ic+TAAAAAElFTkSuQmCC",
+          "width": 20,
+          "height": 11
+        }
+      },
+      "hash": "social_banner_df30a9d4b7",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 938.49,
+      "url": "/uploads/social_banner_df30a9d4b7.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-07T23:50:51.000Z",
+      "updated_at": "2021-03-07T23:50:51.000Z"
+    }
+  },
+  "favicon": {
+    "id": 15,
+    "name": "bkpie-white (1).png",
+    "alternativeText": "",
+    "caption": "",
+    "width": 500,
+    "height": 500,
+    "formats": {
+      "400": [
+        {
+          "name": "400_bkpie-white (1).png",
+          "hash": "400_bkpie_white_1_013a59c6fc",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 400,
+          "height": 400,
+          "size": 21.4,
+          "path": null,
+          "url": "/uploads/400_bkpie_white_1_013a59c6fc.png"
+        },
+        {
+          "name": "400_bkpie-white (1).webp",
+          "hash": "400_bkpie_white_1_013a59c6fc",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 400,
+          "height": 400,
+          "size": 4.52,
+          "path": null,
+          "url": "/uploads/400_bkpie_white_1_013a59c6fc.webp"
+        }
+      ],
+      "500": [
+        {
+          "name": "500_bkpie-white (1).png",
+          "hash": "500_bkpie_white_1_013a59c6fc",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 500,
+          "height": 500,
+          "size": 10.68,
+          "path": null,
+          "url": "/uploads/500_bkpie_white_1_013a59c6fc.png"
+        },
+        {
+          "name": "500_bkpie-white (1).webp",
+          "hash": "500_bkpie_white_1_013a59c6fc",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 500,
+          "height": 500,
+          "size": 5.92,
+          "path": null,
+          "url": "/uploads/500_bkpie_white_1_013a59c6fc.webp"
+        }
+      ],
+      "base64": {
+        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVQ4y8WU22sTURDG888V8UmbUmnUtlJQUBQV0RdffOqzIOKDKC2+mKZpLjQptgpSivFWsNRWwSCkKpWku7k2yW52z8+zG0+STZpUUXFgds+yM9/5vplzxsdfNt8/BxRCuXDfcoUtmu6svf8OAVTBam3ZEshuZzrfjquNxAGoXYBtMCdB2U5RsFvuTO4P6vOCtQPLJiQ+VrmbKnEyqHFmXuf+6xIr6RqGRV/5XobSlcSHbysMzRYYCdU5HYdTMZuRuTpDMwW5Ua1VgnZmD0N+Fh5SOyaBoM7EIkwlaQJKn0zAeFxIthofci5NN+dAhqoWFQPORXT8YZvLyw2S77/z4E2ee68KUnKeKQk6HDK5liy08jrr2APo7Hh9qcBwGG48NUh9+kZ4I8d2JuOCjsZgdL7O9PNyB8MBgKYluJrI419wAOu8TH8ltpll/fMXHq1rjEnAE2GTW89Kv8JQUGvApbjuyrr4xGbuXY47qSLTqxVuvyhydgmOBevcXD5EsqLvWFqzmAxpsrOCcdmYQKzZlAlZv0DE4kJ0j+y+N6evZHUUIls1jsxo+INVAlGLsUiD44/3OTq7x1rG8MT2kdxxSOXDtGFjt8HCZonzUZ0rizqJ7TJbWQu7I3bwwe66LcpKhqDa8Ma1r96gu9wFqoaB+usOC/Ebw6FXvujpZEvqfxuwf2o/AMvd8gi1qc8jAAAAAElFTkSuQmCC",
+        "width": 20,
+        "height": 20
+      }
+    },
+    "hash": "bkpie_white_1_013a59c6fc",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 10.68,
+    "url": "/uploads/bkpie_white_1_013a59c6fc.png",
+    "previewUrl": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "created_at": "2021-03-07T23:56:28.000Z",
+    "updated_at": "2021-03-07T23:56:28.000Z"
+  }
+}
