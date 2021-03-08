@@ -1,28 +1,29 @@
+import { getGlobal, getSortedArticles } from '@/lib/data'
+
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import articles from '@/data/articles' 
-import global from '@/data/global'   
-import { dateSortDesc} from '@/lib/local-strapi'
+import fs from 'fs'
 import generateRss from '@/lib/generate-rss'
 import path from 'path'
-import fs from 'fs'
+import siteMetadata from '@/data/siteMetadata'
+
 const root = process.cwd()
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 7
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
-  articles.sort((a, b) => dateSortDesc(a.publishedAt, b.publishedAt))
-  const rss = generateRss(articles, '',`index.xml`)
+  const articles = getSortedArticles(MAX_DISPLAY, 'page')
+  const global = getGlobal()
+  const rss = generateRss(articles, '', `index.xml`)
   const rssPath = path.join(root, 'public')
   fs.mkdirSync(rssPath, { recursive: true })
   fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
-  return { props: { articles } }
+  return { props: { global, articles } }
 }
 
-export default function Home({ articles }) {
+export default function Home({ global, articles }) {
   return (
     <>
       <PageSeo
@@ -36,13 +37,13 @@ export default function Home({ articles }) {
             Latest
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          {global.defaultSeo.metaTitle}
+            {global.defaultSeo.metaTitle}
           </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!articles.length && 'No posts found.'}
-          {articles.slice(0, MAX_DISPLAY).map((article) => {
-            const { slug, publishedAt, title, description, category   } = article
+          {articles.map((article) => {
+            const { slug, publishedAt, title, description, category } = article
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -51,7 +52,10 @@ export default function Home({ articles }) {
                       <dt className="sr-only">Published on</dt>
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={publishedAt}>
-                          {new Date(publishedAt).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                          {new Date(publishedAt).toLocaleDateString(
+                            siteMetadata.locale,
+                            postDateTemplate
+                          )}
                         </time>
                       </dd>
                     </dl>
@@ -67,9 +71,7 @@ export default function Home({ articles }) {
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                           
-                              <Tag key={category.slug} slug={category.slug} text={category.name} />
-                         
+                            <Tag key={category.slug} slug={category.slug} text={category.name} />
                           </div>
                         </div>
                         <div className="prose text-gray-500 max-w-none dark:text-gray-400">
