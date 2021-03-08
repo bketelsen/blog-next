@@ -1,16 +1,23 @@
-import siteMetadata from '@/data/siteMetadata'
+import {
+  getArticleBySlug,
+  getArticlesByCategorySlug,
+  getArticlesByTagSlug,
+  getCategoryBySlug,
+  getTagBySlug,
+  getTags,
+} from '@/lib/data'
+
 import ListLayout from '@/layouts/ListLayout'
 import { PageSeo } from '@/components/SEO'
 import generateRss from '@/lib/generate-rss'
-import categories from '@/data/categories'
-import articles from '@/data/articles'
-import { dateSortDesc} from '@/lib/local-strapi'
+import siteMetadata from '@/data/siteMetadata'
 
 const root = process.cwd()
 
 export async function getStaticPaths() {
+  const tags = getTags()
   return {
-    paths: categories.map((tag) => ({
+    paths: tags.map((tag) => ({
       params: {
         tag: tag.slug,
       },
@@ -20,27 +27,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  articles.sort((a, b) => dateSortDesc(a.publishedAt, b.publishedAt))
-  const filteredPosts = articles.filter(
-    (article) =>  article.category.slug === params.tag
-  )
-  const catFilter = categories.filter(
-    (cat) =>  cat.slug === params.tag
-  )
-  const category = catFilter[0]
-  // rss 
+  const tag = getTagBySlug(params.tag)
+  const articles = getArticlesByTagSlug(params.tag)
+  // rss
   /*
   const rss = generateRss(filteredPosts, `tags/${params.tag}/index.xml`)
   const rssPath = path.join(root, 'public', 'tags', params.tag)
   fs.mkdirSync(rssPath, { recursive: true })
   fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
 */
-  return { props: { posts: filteredPosts, tag: category } }
+  return { props: { posts: articles, tag } }
 }
 
 export default function Tag({ posts, tag }) {
   // Capitalize first letter and convert space to dash
-  const title = `# ${tag.plural}`
+  const title = `# ${tag.name}`
   return (
     <>
       <PageSeo

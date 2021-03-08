@@ -1,3 +1,4 @@
+import Category from '@/components/Category'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
@@ -54,20 +55,32 @@ export default function ListLayout({ posts, title }) {
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={publishedAt}>
-                        {new Date(publishedAt).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
+                        {new Date(publishedAt).toLocaleDateString(
+                          siteMetdata.locale,
+                          postDateTemplate
+                        )}
                       </time>
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={`/${post.category.slug}/${slug}`} className="text-gray-900 dark:text-gray-100">
+                        <Link
+                          href={`/${post.category.slug}/${slug}`}
+                          className="text-gray-900 dark:text-gray-100"
+                        >
                           {title}
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
-                       
-                          <Tag key={post.category.slug} text={post.category.name} slug={post.category.slug} />
+                        <Category
+                          key={post.category.slug}
+                          text={post.category.name}
+                          slug={post.category.slug}
+                        />
+
+                        {post.tags.length > 0 &&
+                          post.tags.map((tag) => <Tag key={tag} text={tag.name} slug={tag.slug} />)}
                       </div>
                     </div>
                     <div className="prose text-gray-500 max-w-none dark:text-gray-400">

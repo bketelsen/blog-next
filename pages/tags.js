@@ -1,18 +1,17 @@
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
-import categories from '@/data/categories'
+import { getTags } from '@/lib/data'
 import global from '@/data/global'
 import { kebabCase } from '@/lib/utils'
 import siteMetadata from '@/data/siteMetadata'
-import { sortOn } from '@/lib/local-strapi'
 
 export async function getStaticProps() {
-  sortOn(categories, 'name')
-  return { props: { categories } }
+  const tags = getTags()
+  return { props: { tags } }
 }
 
-export default function Tags({ categories }) {
+export default function Tags({ tags }) {
   //const sortedTags = tags.sort((a, b) => tags[b] - tags[a])
   return (
     <>
@@ -28,8 +27,8 @@ export default function Tags({ categories }) {
           </h1>
         </div>
         <div className="flex flex-wrap max-w-lg">
-          {Object.keys(categories).length === 0 && 'No tags found.'}
-          {categories.map((t) => {
+          {Object.keys(tags).length === 0 && 'No tags found.'}
+          {tags.map((t) => {
             if (t.articles.length > 0) {
               return (
                 <div key={t.slug} className="mt-2 mb-2 mr-5">

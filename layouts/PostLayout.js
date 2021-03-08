@@ -1,10 +1,11 @@
+import { BlogSeo } from '@/components/SEO'
+import Category from '@/components/Category'
+import Image from 'next/image'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
-import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
-import Image from 'next/image'
 
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(`${siteMetdata.siteUrl}/blog/${slug}`)}`
@@ -25,7 +26,10 @@ export default function PostLayout({ children, post, next, prev }) {
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={publishedAt}>
-                      {new Date(publishedAt).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
+                      {new Date(publishedAt).toLocaleDateString(
+                        siteMetdata.locale,
+                        postDateTemplate
+                      )}
                     </time>
                   </dd>
                 </div>
@@ -44,7 +48,11 @@ export default function PostLayout({ children, post, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <img src={post.author.picture.url} alt="avatar" className="w-10 h-10 rounded-full" />
+                    <img
+                      src={post.author.picture.url}
+                      alt="avatar"
+                      className="w-10 h-10 rounded-full"
+                    />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
                       <dd className="text-gray-900 dark:text-gray-100">{post.author.name}</dd>
@@ -64,15 +72,14 @@ export default function PostLayout({ children, post, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">
-                {post.image && 
-                  <Image 
+                {post.image && (
+                  <Image
                     src={post.image.url}
                     width={post.image.width}
                     height={post.image.height}
                     alt={post.image.alt}
-
                   />
-                }
+                )}
                 {children}
               </div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
@@ -83,14 +90,26 @@ export default function PostLayout({ children, post, next, prev }) {
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
-                  <div className="py-4 xl:py-8">
-                    <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
-                      Category
-                    </h2>
-                    <div className="flex flex-wrap">
-                        <Tag key={category.slug} text={category.name} slug={category.slug} />
-                    </div>
+                <div className="py-4 xl:py-8">
+                  <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                    Category
+                  </h2>
+                  <div className="flex flex-wrap">
+                    <Category key={category.slug} text={category.name} slug={category.slug} />
                   </div>
+                  {post.tags.length > 0 && (
+                    <div className="py-4 xl:py-8">
+                      <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                        Tags
+                      </h2>
+                      <div className="space-x-3 xl:flex xl:flex-col xl:space-x-0">
+                        {post.tags.map((tag) => (
+                          <Tag key={tag} text={tag.name} slug={tag.slug} />
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (

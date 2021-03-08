@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "name": "mysql",
+    "slug": "mysql",
+    "created_at": "2021-03-08T12:03:41.000Z",
+    "updated_at": "2021-03-08T12:03:41.000Z",
+    "articles": [
+      {
+        "id": 4,
+        "title": "A bug is becoming a meme on the internet",
+        "description": "How a bug on MySQL is becoming a meme on the internet",
+        "content": "It's the story of a user named **Omer Barnir** who reported a bug in 2005 on the MySQL [bug report platform](https://bugs.mysql.com/)\n\nBut the thing is that Omer never get an answer. 15 years later, the bug has never been fix and people are starting to make fun out of it. We let you take a look at the conversation [here](https://bugs.mysql.com/bug.php?id=11472), it's pretty funny\n\n",
+        "publishedAt": "2020-07-16T10:00:00.000Z",
+        "status": "published",
+        "slug": "a-bug-is-becoming-a-meme-on-the-internet",
+        "category": 6,
+        "author": 3,
+        "created_at": "2021-03-04T21:41:58.000Z",
+        "updated_at": "2021-03-08T12:11:20.000Z",
+        "seo": {
+          "id": 3,
+          "metaTitle": "A bug is becoming a meme on the internet",
+          "metaDescription": "How a bug on MySQL is becoming a meme on the internet",
+          "shareImage": {
+            "id": 13,
+            "name": "cool_img.png",
+            "alternativeText": "",
+            "caption": "",
+            "width": 1600,
+            "height": 900,
+            "formats": {
+              "400": [
+                {
+                  "name": "400_cool_img.png",
+                  "hash": "400_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 400,
+                  "height": 225,
+                  "size": 128.47,
+                  "path": null,
+                  "url": "/uploads/400_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "400_cool_img.webp",
+                  "hash": "400_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 400,
+                  "height": 225,
+                  "size": 11.79,
+                  "path": null,
+                  "url": "/uploads/400_cool_img_1052875b56.webp"
+                }
+              ],
+              "600": [
+                {
+                  "name": "600_cool_img.png",
+                  "hash": "600_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 600,
+                  "height": 338,
+                  "size": 257.53,
+                  "path": null,
+                  "url": "/uploads/600_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "600_cool_img.webp",
+                  "hash": "600_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 600,
+                  "height": 338,
+                  "size": 20.5,
+                  "path": null,
+                  "url": "/uploads/600_cool_img_1052875b56.webp"
+                }
+              ],
+              "800": [
+                {
+                  "name": "800_cool_img.png",
+                  "hash": "800_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 800,
+                  "height": 450,
+                  "size": 428.2,
+                  "path": null,
+                  "url": "/uploads/800_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "800_cool_img.webp",
+                  "hash": "800_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 800,
+                  "height": 450,
+                  "size": 29.44,
+                  "path": null,
+                  "url": "/uploads/800_cool_img_1052875b56.webp"
+                }
+              ],
+              "1000": [
+                {
+                  "name": "1000_cool_img.png",
+                  "hash": "1000_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 1000,
+                  "height": 563,
+                  "size": 638.26,
+                  "path": null,
+                  "url": "/uploads/1000_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "1000_cool_img.webp",
+                  "hash": "1000_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 1000,
+                  "height": 563,
+                  "size": 39.66,
+                  "path": null,
+                  "url": "/uploads/1000_cool_img_1052875b56.webp"
+                }
+              ],
+              "1200": [
+                {
+                  "name": "1200_cool_img.png",
+                  "hash": "1200_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 1200,
+                  "height": 675,
+                  "size": 887.57,
+                  "path": null,
+                  "url": "/uploads/1200_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "1200_cool_img.webp",
+                  "hash": "1200_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 1200,
+                  "height": 675,
+                  "size": 48.56,
+                  "path": null,
+                  "url": "/uploads/1200_cool_img_1052875b56.webp"
+                }
+              ],
+              "1400": [
+                {
+                  "name": "1400_cool_img.png",
+                  "hash": "1400_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 1400,
+                  "height": 788,
+                  "size": 1157.65,
+                  "path": null,
+                  "url": "/uploads/1400_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "1400_cool_img.webp",
+                  "hash": "1400_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 1400,
+                  "height": 788,
+                  "size": 59.25,
+                  "path": null,
+                  "url": "/uploads/1400_cool_img_1052875b56.webp"
+                }
+              ],
+              "1600": [
+                {
+                  "name": "1600_cool_img.png",
+                  "hash": "1600_cool_img_1052875b56",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "width": 1600,
+                  "height": 900,
+                  "size": 1345.61,
+                  "path": null,
+                  "url": "/uploads/1600_cool_img_1052875b56.png"
+                },
+                {
+                  "name": "1600_cool_img.webp",
+                  "hash": "1600_cool_img_1052875b56",
+                  "ext": ".webp",
+                  "mime": "image/webp",
+                  "width": 1600,
+                  "height": 900,
+                  "size": 69.44,
+                  "path": null,
+                  "url": "/uploads/1600_cool_img_1052875b56.webp"
+                }
+              ],
+              "base64": {
+                "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACHElEQVQozyWSS28TMRDHvX7vw7vrXXvTNknTfeS1m2RJhBDiAAcOPCRuVSraHooEoghaDqQSQkggvgMHvgcfkNlg2Rp7ZP/n55lBXEouPeq6DHMxLfi3K3p3SXcX4uZM3pzxT1t+syVfztnuIvj+Jl4UDCFMCMYYOQ7qDJwdjB2HICQR4gjBRnTToQi5yJH7o2VU7C/vhwMvQIbqJPVV6AdKx1pHsLRJTKCTwGTa2CRNdWbTzFoTZ9ZEcayUCpTqFJiQ48msrMblSd7UTZVXeVE1y3Y6b0Z52a43xbgqq6q9ty6KHGazWNR1XZYlIRRRyjAGTMdmvWoyXS7aum7m9WKzub9arWezGp4uV6vhYDgajdq2VWG4h4aBERWu9Hwp3TCMjbFHg4HtHYZBlGoTRXGi00gnttcLo1i6bqQ1FxwTyI/TYVPGHcIIGEqlcIXnCy8QrkcxhVuUcuH7hDFG6X9ATAWhkmDSJcwhFBydhV2H4VPCJeghKAiTDPQkZxBPgBDU4fjguB6Nu6iEI9p5meof2M0yKkZZ29h6YqalbeugfxgOB34cCwqBmXQjIdMnj19uX2372QnBEgEw4CfzavX1ev3jdv7+fP7xcvPr89O/f5rd24e/f87evQZIz/OOjkqlDj5c3714floc5oz7ANf1C5euMkbnxzLwVc+qYd/vZYFNg8yk85L7nhAyM0Noosur2wePnsHnpVD/ANtcOkJPib0NAAAAAElFTkSuQmCC",
+                "width": 20,
+                "height": 11
+              }
+            },
+            "hash": "cool_img_1052875b56",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 1069.13,
+            "url": "/uploads/cool_img_1052875b56.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-03-07T23:47:19.000Z",
+            "updated_at": "2021-03-07T23:47:19.000Z"
+          }
+        },
+        "image": {
+          "id": 6,
+          "name": "a-bug-is-becoming-a-meme-on-the-internet.jpg",
+          "alternativeText": null,
+          "caption": null,
+          "width": 3628,
+          "height": 2419,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_a-bug-is-becoming-a-meme-on-the-internet.jpg",
+              "hash": "thumbnail_a_bug_is_becoming_a_meme_on_the_internet_411379a171",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 234,
+              "height": 156,
+              "size": 6.74,
+              "path": null,
+              "url": "/uploads/thumbnail_a_bug_is_becoming_a_meme_on_the_internet_411379a171.jpg"
+            },
+            "large": {
+              "name": "large_a-bug-is-becoming-a-meme-on-the-internet.jpg",
+              "hash": "large_a_bug_is_becoming_a_meme_on_the_internet_411379a171",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 667,
+              "size": 51.1,
+              "path": null,
+              "url": "/uploads/large_a_bug_is_becoming_a_meme_on_the_internet_411379a171.jpg"
+            },
+            "medium": {
+              "name": "medium_a-bug-is-becoming-a-meme-on-the-internet.jpg",
+              "hash": "medium_a_bug_is_becoming_a_meme_on_the_internet_411379a171",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 500,
+              "size": 33.28,
+              "path": null,
+              "url": "/uploads/medium_a_bug_is_becoming_a_meme_on_the_internet_411379a171.jpg"
+            },
+            "small": {
+              "name": "small_a-bug-is-becoming-a-meme-on-the-internet.jpg",
+              "hash": "small_a_bug_is_becoming_a_meme_on_the_internet_411379a171",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 333,
+              "size": 19.25,
+              "path": null,
+              "url": "/uploads/small_a_bug_is_becoming_a_meme_on_the_internet_411379a171.jpg"
+            }
+          },
+          "hash": "a_bug_is_becoming_a_meme_on_the_internet_411379a171",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 198.85,
+          "url": "/uploads/a_bug_is_becoming_a_meme_on_the_internet_411379a171.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-04T21:41:58.000Z",
+          "updated_at": "2021-03-04T21:41:58.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "photo",
+    "slug": "photo",
+    "created_at": "2021-03-08T12:04:09.000Z",
+    "updated_at": "2021-03-08T12:04:09.000Z",
+    "articles": [
+      {
+        "id": 5,
+        "title": "Beautiful picture",
+        "description": "Description of a beautiful picture",
+        "content": "This is an empty blog post with a beautiful picture",
+        "publishedAt": "2020-07-16T10:00:00.000Z",
+        "status": "published",
+        "slug": "beautiful-picture",
+        "category": 6,
+        "author": 3,
+        "created_at": "2021-03-04T21:41:58.000Z",
+        "updated_at": "2021-03-08T12:11:27.000Z",
+        "seo": {
+          "id": 4,
+          "metaTitle": "Beautiful picture",
+          "metaDescription": "Description of a beautiful picture",
+          "shareImage": {
+            "id": 9,
+            "name": "beautiful-picture.jpg",
+            "alternativeText": null,
+            "caption": null,
+            "width": 3824,
+            "height": 2548,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_beautiful-picture.jpg",
+                "hash": "thumbnail_beautiful_picture_d7af51067f",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "width": 234,
+                "height": 156,
+                "size": 6.44,
+                "path": null,
+                "url": "/uploads/thumbnail_beautiful_picture_d7af51067f.jpg"
+              },
+              "large": {
+                "name": "large_beautiful-picture.jpg",
+                "hash": "large_beautiful_picture_d7af51067f",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "width": 1000,
+                "height": 666,
+                "size": 83.56,
+                "path": null,
+                "url": "/uploads/large_beautiful_picture_d7af51067f.jpg"
+              },
+              "medium": {
+                "name": "medium_beautiful-picture.jpg",
+                "hash": "medium_beautiful_picture_d7af51067f",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "width": 750,
+                "height": 500,
+                "size": 47.82,
+                "path": null,
+                "url": "/uploads/medium_beautiful_picture_d7af51067f.jpg"
+              },
+              "small": {
+                "name": "small_beautiful-picture.jpg",
+                "hash": "small_beautiful_picture_d7af51067f",
+                "ext": ".jpg",
+                "mime": "image/jpeg",
+                "width": 500,
+                "height": 333,
+                "size": 23.36,
+                "path": null,
+                "url": "/uploads/small_beautiful_picture_d7af51067f.jpg"
+              }
+            },
+            "hash": "beautiful_picture_d7af51067f",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 585.12,
+            "url": "/uploads/beautiful_picture_d7af51067f.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-03-04T21:41:59.000Z",
+            "updated_at": "2021-03-04T21:41:59.000Z"
+          }
+        },
+        "image": {
+          "id": 9,
+          "name": "beautiful-picture.jpg",
+          "alternativeText": null,
+          "caption": null,
+          "width": 3824,
+          "height": 2548,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_beautiful-picture.jpg",
+              "hash": "thumbnail_beautiful_picture_d7af51067f",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 234,
+              "height": 156,
+              "size": 6.44,
+              "path": null,
+              "url": "/uploads/thumbnail_beautiful_picture_d7af51067f.jpg"
+            },
+            "large": {
+              "name": "large_beautiful-picture.jpg",
+              "hash": "large_beautiful_picture_d7af51067f",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 1000,
+              "height": 666,
+              "size": 83.56,
+              "path": null,
+              "url": "/uploads/large_beautiful_picture_d7af51067f.jpg"
+            },
+            "medium": {
+              "name": "medium_beautiful-picture.jpg",
+              "hash": "medium_beautiful_picture_d7af51067f",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 750,
+              "height": 500,
+              "size": 47.82,
+              "path": null,
+              "url": "/uploads/medium_beautiful_picture_d7af51067f.jpg"
+            },
+            "small": {
+              "name": "small_beautiful-picture.jpg",
+              "hash": "small_beautiful_picture_d7af51067f",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 333,
+              "size": 23.36,
+              "path": null,
+              "url": "/uploads/small_beautiful_picture_d7af51067f.jpg"
+            }
+          },
+          "hash": "beautiful_picture_d7af51067f",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 585.12,
+          "url": "/uploads/beautiful_picture_d7af51067f.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-03-04T21:41:59.000Z",
+          "updated_at": "2021-03-04T21:41:59.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "markdown",
+    "slug": "markdown",
+    "created_at": "2021-03-08T12:04:44.000Z",
+    "updated_at": "2021-03-08T12:04:44.000Z",
+    "articles": []
+  },
+  {
+    "id": 4,
+    "name": "internet",
+    "slug": "internet",
+    "created_at": "2021-03-08T12:04:51.000Z",
+    "updated_at": "2021-03-08T12:04:51.000Z",
+    "articles": []
+  }
+]
