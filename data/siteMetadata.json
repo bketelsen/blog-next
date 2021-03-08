@@ -4,8 +4,8 @@
   "headerTitle": "DEFAULT",
   "description": "DEFAULT",
   "language": "en-us",
-  "siteUrl": "https://tailwind-nextjs-starter-blog.vercel.app",
-  "siteRepo": "https://github.com/bketelsen/tailwind-nextjs-starter-blog",
+  "siteUrl": "https://blog-next-pi.vercel.app",
+  "siteRepo": "https://github.com/bketelsen/blog-next",
   "image": "/static/images/avatar.png",
   "socialBanner": "/static/images/twitter-card.png",
   "locale": "en-US"
