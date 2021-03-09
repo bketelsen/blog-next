@@ -2,7 +2,6 @@ import '@/css/tailwind.css'
 
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
-import { ImageProvider } from 'react-strapi-img'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
 import { MDXProvider } from '@mdx-js/react'
@@ -18,9 +17,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo {...SEO} />
         <LayoutWrapper>
-          <ImageProvider prefix={''}>
-            <Component {...pageProps} />
-          </ImageProvider>
+          <Component {...pageProps} />
         </LayoutWrapper>
       </MDXProvider>
     </ThemeProvider>

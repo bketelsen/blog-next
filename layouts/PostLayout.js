@@ -1,6 +1,6 @@
 import { BlogSeo } from '@/components/SEO'
 import Category from '@/components/Category'
-import Image from 'react-strapi-img'
+import Image from '@/components/Image'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
@@ -19,6 +19,7 @@ export default function PostLayout({ children, post, next, prev }) {
   const author = post.relationships.author[0].frontMatter
   const author_url = post.relationships.author[0].url
   const avatar = post.relationships.author[0].relationships.avatar[0].frontMatter
+  console.log('fm', post.relationships.author[0].relationships.avatar[0].frontMatter)
   return (
     <SectionContainer>
       <BlogSeo url={`${siteMetdata.siteUrl}/${category.slug}/${slug}`} post={post} />
@@ -53,7 +54,10 @@ export default function PostLayout({ children, post, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <Image {...avatar} className="flex items-center space-x-2" />
+                    <Image
+                      details={post.relationships.author[0].relationships.avatar[0].frontMatter}
+                      className="flex items-center space-x-2"
+                    />
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
                       <dd className="text-gray-900 dark:text-gray-100">
@@ -78,7 +82,9 @@ export default function PostLayout({ children, post, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">
-                {post.relationships.image && <Image {...post.relationships.image[0].frontMatter} />}
+                {post.relationships.image && (
+                  <Image details={post.relationships.image[0].frontMatter} />
+                )}
                 {children}
               </div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
