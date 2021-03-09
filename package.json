@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next dev",
-    "dev": "next dev",
+    "start": "node ./scripts/data.mjs && next dev",
+    "dev": "node ./scripts/data.mjs && next dev",
     "build": "node ./scripts/data.mjs && next build",
-    "serve": "next start",
-    "analyze": "ANALYZE=true Next build"
+    "serve": "node ./scripts/data.mjs && next start",
+    "analyze": "ANALYZE=true node ./scripts/data.mjs && next build"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
