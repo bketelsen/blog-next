@@ -18,13 +18,7 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo {...SEO} />
         <LayoutWrapper>
-          <ImageProvider
-            prefix={
-              process.env.NODE_ENV === 'production'
-                ? process.env.VERCEL_URL
-                : 'http://localhost:3000'
-            }
-          >
+          <ImageProvider prefix={''}>
             <Component {...pageProps} />
           </ImageProvider>
         </LayoutWrapper>
