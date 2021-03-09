@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./scripts/data.mjs && next dev",
-    "dev": "node ./scripts/data.mjs && next dev",
-    "build": "node ./scripts/data.mjs && next build",
-    "serve": "node ./scripts/data.mjs && next start",
-    "analyze": "ANALYZE=true node ./scripts/data.mjs && next build"
+    "start": "next dev",
+    "dev": "next dev",
+    "build": "next build",
+    "serve": "next start",
+    "analyze": "ANALYZE=true Next build"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.5.0",
@@ -19,7 +19,9 @@
     "autoprefixer": "^10.1.0",
     "gray-matter": "^4.0.2",
     "image-size": "0.9.3",
+    "js-yaml": "^3.14.1",
     "next": "10.0.5",
+    "next-mdx": "^0.2.4",
     "next-mdx-remote": "^2.0.0",
     "next-seo": "4.17.0",
     "next-themes": "^0.0.10",

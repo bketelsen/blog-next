@@ -1,0 +1,43 @@
+---
+title: Caddy and Let's Encrypt
+excerpt: >-
+  I spent all of 5 minutes configuring Caddyto automatically pull content from
+  github, post-process it with hugo and serve it up with fresh SSL/TLS
+  certificates from Let's Encrypt.
+image: 
+  - I_Ga3_Md8w_P6g_a08bf31aa7
+published_at: '2015-11-11T05:00:00.000Z'
+updated_at: '2021-03-09T16:22:56.000Z'
+status: published
+featured: false
+category: 
+  - blog
+author: 
+  - brian-ketelsen
+seo:
+  metaTitle: Caddy and Let's Encrypt
+  metaDescription: >-
+  I spent all of 5 minutes configuring Caddyto automatically pull content from
+  github, post-process it with hugo and serve it up with fresh SSL/TLS
+  certificates from Let's Encrypt.
+  shareImage: 
+    - mb_Lr6_N_Eat_MI_af0fb8901d
+tags:
+  - internet
+---
+
+I spent all of 5 minutes configuring [Caddy](https://caddyserver.com) to automatically pull content from github, post-process it with [hugo](http://gohugo.io) and serve it up with fresh SSL/TLS certificates from Let's Encrypt. <!--more-->
+
+When you think about it, that's pretty damned amazing. Caddy already made web serving easy. It powers everything I do now: gopheracademy.com, gophercon.com and a dozen more. Add hugo to the mix and you have a really powerful publishing platform that is fully automated with just a git push. I really love that Caddy polls my github repository and publishes new content. It's a zero-overhead proposition to publish a new post.
+
+After configuring the Let's Encrypt integration, my esteem for Caddy leveled up to 11. I did almost nothing to enable it. Changed a flag in the command line to invoke Caddy, changed the URL in the Caddy configuration file from http to https. In the background, Caddy requested and installed the certificates for me, and will continue to renew them before they expire. SSL Everywhere is no longer a dream, it's real, it's here, and the tools couldn't be easier to use.
+
+```go
+package main
+
+import "github.com/bketelsen/stuff"
+
+func main() {
+  fmt.Println("Hello")
+}
+```

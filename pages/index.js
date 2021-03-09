@@ -1,11 +1,7 @@
-import { getGlobal, getSortedArticles } from '@/lib/data'
-
 import HomeCardList from '@/components/HomeCardList'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import fs from 'fs'
-import generateRss from '@/lib/generate-rss'
-import path from 'path'
+import { getAllMdxNodes } from 'next-mdx'
 import siteMetadata from '@/data/siteMetadata'
 
 const root = process.cwd()
@@ -14,31 +10,26 @@ const MAX_DISPLAY = 3
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
-  const articles = getSortedArticles(null, 'page')
-  const global = getGlobal()
-  const rss = generateRss(articles, '', `index.xml`)
-  const rssPath = path.join(root, 'public')
-  fs.mkdirSync(rssPath, { recursive: true })
-  fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
-  return { props: { global, articles } }
-}
+  const posts = await getAllMdxNodes('post')
 
-export default function Home({ global, articles }) {
+  return {
+    props: {
+      posts: posts.filter((post) => post.frontMatter.featured),
+    },
+  }
+}
+export default function Home({ posts }) {
   return (
     <>
-      <PageSeo
-        title={global.defaultSeo.metaTitle}
-        description={global.defaultSeo.metaDescription}
-        url={siteMetadata.siteUrl}
-      />
+      <PageSeo title="title" description="description" url={siteMetadata.siteUrl} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <HomeCardList
-          articles={articles.slice(0, MAX_DISPLAY)}
+          articles={posts.slice(0, MAX_DISPLAY)}
           title={'Latest'}
-          subTitle={global.defaultSeo.metaTitle}
+          subTitle={'Subtitle'}
         />
       </div>
-      {articles.length > MAX_DISPLAY && (
+      {posts.length > MAX_DISPLAY && (
         <div className="flex justify-center text-base font-medium leading-6">
           <Link
             href="/blog"
