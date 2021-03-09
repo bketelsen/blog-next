@@ -8,7 +8,7 @@
     "name": "Brian Ketelsen",
     "email": "mail@bjk.fyi",
     "created_at": "2021-03-07T11:06:53.000Z",
-    "updated_at": "2021-03-09T16:22:56.000Z",
+    "updated_at": "2021-03-09T17:33:31.000Z",
     "twitter": "https://twitter.com/bketelsen",
     "youtube": "https://youtube.com/bketelsen",
     "github": "https://github.com/bketelsen",
@@ -306,6 +306,175 @@
       "provider_metadata": null,
       "created_at": "2021-03-09T16:22:49.000Z",
       "updated_at": "2021-03-09T16:22:49.000Z"
+    },
+    "avatar": {
+      "id": 26,
+      "name": "bri.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1234,
+      "height": 1459,
+      "formats": {
+        "400": [
+          {
+            "name": "400_bri.png",
+            "hash": "400_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 400,
+            "height": 473,
+            "size": 105.87,
+            "path": null,
+            "url": "/uploads/400_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "400_bri.webp",
+            "hash": "400_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 400,
+            "height": 473,
+            "size": 24.5,
+            "path": null,
+            "url": "/uploads/400_bri_589a3a8cc2.webp"
+          }
+        ],
+        "600": [
+          {
+            "name": "600_bri.png",
+            "hash": "600_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 600,
+            "height": 709,
+            "size": 182.65,
+            "path": null,
+            "url": "/uploads/600_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "600_bri.webp",
+            "hash": "600_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 600,
+            "height": 709,
+            "size": 39.4,
+            "path": null,
+            "url": "/uploads/600_bri_589a3a8cc2.webp"
+          }
+        ],
+        "800": [
+          {
+            "name": "800_bri.png",
+            "hash": "800_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 800,
+            "height": 946,
+            "size": 270.93,
+            "path": null,
+            "url": "/uploads/800_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "800_bri.webp",
+            "hash": "800_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 800,
+            "height": 946,
+            "size": 54.5,
+            "path": null,
+            "url": "/uploads/800_bri_589a3a8cc2.webp"
+          }
+        ],
+        "1000": [
+          {
+            "name": "1000_bri.png",
+            "hash": "1000_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1000,
+            "height": 1182,
+            "size": 367.19,
+            "path": null,
+            "url": "/uploads/1000_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "1000_bri.webp",
+            "hash": "1000_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1000,
+            "height": 1182,
+            "size": 68.17,
+            "path": null,
+            "url": "/uploads/1000_bri_589a3a8cc2.webp"
+          }
+        ],
+        "1200": [
+          {
+            "name": "1200_bri.png",
+            "hash": "1200_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1200,
+            "height": 1419,
+            "size": 467.09,
+            "path": null,
+            "url": "/uploads/1200_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "1200_bri.webp",
+            "hash": "1200_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1200,
+            "height": 1419,
+            "size": 83.45,
+            "path": null,
+            "url": "/uploads/1200_bri_589a3a8cc2.webp"
+          }
+        ],
+        "1234": [
+          {
+            "name": "1234_bri.png",
+            "hash": "1234_bri_589a3a8cc2",
+            "ext": ".png",
+            "mime": "image/png",
+            "width": 1234,
+            "height": 1459,
+            "size": 134.65,
+            "path": null,
+            "url": "/uploads/1234_bri_589a3a8cc2.png"
+          },
+          {
+            "name": "1234_bri.webp",
+            "hash": "1234_bri_589a3a8cc2",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1234,
+            "height": 1459,
+            "size": 71.93,
+            "path": null,
+            "url": "/uploads/1234_bri_589a3a8cc2.webp"
+          }
+        ],
+        "base64": {
+          "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAUCAYAAABroNZJAAAACXBIWXMAAC4jAAAuIwF4pT92AAAEx0lEQVQ4y0WTe2zTVRTH7zYjBCWQFLfRrbS/9+/X0nVb23X99b11faztquzRjb2o29hWtm7de1NgIhIXM2DIyyDGwGJAEBLUoOATVBJRA38gJv6hJipIjAaJ4dH2Hn8dkd3k5pxz77mf+z33gZDUtBoNWrVqFaJIIisTy+XyFZZy0/tul/O+3SImDaUlf1vM5Z/otFqxyuVEGze0L+Q9uXw5etSM+lKUn5+Pgj5PlstmRRqB76p02KE2XIM72lqhLhwCp9UCLrsNBI6rLdHpUJlBny2TyRYhFEmimW3TaOaFrRngbpPReEeWm5fS6w3Y6XBgn8eLnU7nPbOpDHiOvTg52I+Ov3EIyVevXoTwHJe1dOmSjCvzut13KiQVO/qj6WMzz0G8tQEmOlvw7on+tNsmQpnBcIOnKZlKqUQcy2Q9gqgFHi1btgzxSvlK0Sz+OdjeCHDlbBquf4zh6gcYrp3P9PSZXdMgms23LcbSPJphpLNUL0IIknrkc4Lmu476MGzpbkntiHfAzQ/n4bXNgzAWjaT2TPSBTTRfBYCFXEGtWSxnoHkd+nF+BkmT2dHa4LevjsfgvSOH0pOjI/iH43vgxdEhvH92p6RkKzSHfD8lmkJ5m6N1qEo0LioZj0aQXLqdiMf2+L7JvpsHpvrgxuenU799+g78de4I/PPVGfj9wpn0+f0vwUTHehxvCpNj7XUo4BAXIYqCAnR0+1jWUHsE1ftcdYm2hjsPvjwJp2e34NHOVrxrNIbvXnwbH54eBlOxdnzlU3loqrM5q9Ff8RCQmy9HqOdhjZdPvpl9aX4vqrRZTl0/eRDenduWPPHK83B4eiR9+egc9Lc2/Pr/xtoi3YLNK1BKkNxcpGQ02erqvpzM4BpGLSUUj7w8HINbH72VvHbiAL51bj51YnYr2G3WzyrdVQuL6fKax1YrWSSn1iK0Ye8lpKTVSAgMoBU5aKVcxVhUaxTnRXM5NNfXpjtb1+OeaCt+JhwGfWnp3TWFBQdlS9AThFiHMi9LxetykK97BypU0SHC4N9Hu9p+UVA8qFQE0LZGbHBHwOFdB6I3Ajp/FyZNIVAp5FBIr/1ZZQxMSYwlKka6ZoLXHaM0emAr2oFxtAClUmCyxJVSh8eADw5h0t2DWX8c88GEFCcwwWmTNKsGzrcJSFPw+0IlEUNssSVFF5nSrLsrSRs9aZpUYbaqC9TSAsqzCWtcTUC5u4GvjmMhNIIZax0whCLNutqSrOVpIHkdIEZrPMSYQ8AHEg9otQ7oYhsWasYw5YqCN9IDO3fNQbilF5iKKHBeSVXVRkxxGmDLfPczQFpT+joiiywE5+39lw0kgOK1D1hnC9bUDGOVuxc394zifXOzODY0hYnKbiz4eiVFA5g2SoASO0iKbxM0RyPW1oA4f19YH+wCqsgCvL8vzXt7koxUnuBsShkCnSnBXp9ifZuSQmAwKYSGQSoFSJ3tD6F22sC6n0Wocl1Htq99HI3HWso11vAFLjAo7dYPvLcXuOoBINwbgfX3g/QEMueSsfd4X+xoAa1VUpZ6RGjFHBTd+zUyNm7OibY1I2e29DMDcVFK3iYEE6d4T/cXVqHsitba8A0XHDorVMcnpTmG83QjhWBEtL0pR6lzoP8AA03k/VlvKHMAAAAASUVORK5CYII=",
+          "width": 17,
+          "height": 20
+        }
+      },
+      "hash": "bri_589a3a8cc2",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 134.65,
+      "url": "/uploads/bri_589a3a8cc2.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-09T17:33:27.000Z",
+      "updated_at": "2021-03-09T17:33:27.000Z"
     }
   },
   "defaultSeo": {
