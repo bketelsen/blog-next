@@ -6,6 +6,7 @@
     "start": "node ./scripts/data.mjs && next dev",
     "dev": "node ./scripts/data.mjs && next dev",
     "build": "node ./scripts/data.mjs && next build",
+    "export": "node ./scripts/data.mjs && next build && next export",
     "serve": "node ./scripts/data.mjs && next start",
     "analyze": "ANALYZE=true node ./scripts/data.mjs && next build"
   },

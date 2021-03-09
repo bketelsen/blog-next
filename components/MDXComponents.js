@@ -1,8 +1,8 @@
-import Image from 'next/image'
 import CustomLink from './Link'
+import Image from 'next/image'
 
 const MDXComponents = {
-   Image,
+  Image,
   a: CustomLink,
 }
 

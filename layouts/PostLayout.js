@@ -1,6 +1,6 @@
 import { BlogSeo } from '@/components/SEO'
 import Category from '@/components/Category'
-import Image from '@/components/Image'
+import ImageWrapper from '@/components/ImageWrapper'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
@@ -53,7 +53,7 @@ export default function PostLayout({ children, post, next, prev }) {
               <dd>
                 <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-8">
                   <li className="flex items-center space-x-2">
-                    <Image
+                    <ImageWrapper
                       details={post.relationships.author[0].relationships.avatar[0].frontMatter}
                       className="flex items-center space-x-2"
                     />
@@ -82,7 +82,7 @@ export default function PostLayout({ children, post, next, prev }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose lg:prose-xl dark:prose-dark max-w-none">
                 {post.relationships.image && (
-                  <Image details={post.relationships.image[0].frontMatter} />
+                  <ImageWrapper details={post.relationships.image[0].frontMatter} />
                 )}
                 {children}
               </div>

@@ -1,14 +1,12 @@
-import IdealImage from 'react-ideal-image'
-
-export default function Image({ details }) {
-  console.log('image', details)
+import Image from 'next/image'
+export default function ImageWrapper({ details }) {
   return (
-    <IdealImage
+    <Image
       placeholder={{ lqip: details.base64.url }}
       alt={details.alternativeText}
       height={details.height}
       width={details.width}
-      srcSet={sourceSet(details)}
+      src={details.url}
     />
   )
 }
