@@ -17,7 +17,8 @@
         "category": 6,
         "author": 3,
         "created_at": "2021-03-04T21:41:58.000Z",
-        "updated_at": "2021-03-09T17:33:31.000Z",
+        "updated_at": "2021-03-09T17:44:36.000Z",
+        "featured": true,
         "seo": {
           "id": 3,
           "metaTitle": "A bug is becoming a meme on the internet",
@@ -430,7 +431,8 @@
         "category": 6,
         "author": 3,
         "created_at": "2021-03-04T21:41:58.000Z",
-        "updated_at": "2021-03-09T17:33:31.000Z",
+        "updated_at": "2021-03-09T17:45:53.000Z",
+        "featured": true,
         "seo": {
           "id": 4,
           "metaTitle": "Beautiful picture",
@@ -1019,7 +1021,8 @@
         "category": 6,
         "author": 3,
         "created_at": "2021-03-08T16:29:49.000Z",
-        "updated_at": "2021-03-09T17:33:31.000Z",
+        "updated_at": "2021-03-09T17:46:00.000Z",
+        "featured": false,
         "seo": {
           "id": 9,
           "metaTitle": "Caddy and Let's Encrypt",

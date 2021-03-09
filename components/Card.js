@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'react-strapi-img'
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
 
@@ -7,14 +7,7 @@ const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 const Card = ({ article }) => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
     <div className="flex-shrink-0">
-      <Image
-        src={article.frontMatter.image}
-        alt="avatar"
-        layout="intrinsic"
-        className="h-48 w-full object-cover"
-        width="700"
-        height="300"
-      />
+      <Image {...article.relationships.image[0].frontMatter} />
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">
@@ -52,8 +45,8 @@ const Card = ({ article }) => (
             </a>
           </p>
           <div className="flex space-x-1 text-sm text-gray-500">
-            <time dateTime={article.publishedAt}>
-              {new Date(article.publishedAt).toLocaleDateString(
+            <time dateTime={article.frontMatter.published_at}>
+              {new Date(article.frontMatter.published_at).toLocaleDateString(
                 siteMetadata.locale,
                 postDateTemplate
               )}

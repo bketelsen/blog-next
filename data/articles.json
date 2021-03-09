@@ -490,7 +490,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:46:07.000Z",
+    "featured": false,
     "seo": {
       "id": 5,
       "metaTitle": "The internet's Own boy",
@@ -1519,7 +1520,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:46:45.000Z",
+    "featured": false,
     "seo": {
       "id": 6,
       "metaTitle": "This shrimp is awesome",
@@ -2404,7 +2406,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:46:20.000Z",
+    "featured": false,
     "seo": {
       "id": 8,
       "metaTitle": "What's inside a Black Hole",
@@ -3265,7 +3268,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:44:36.000Z",
+    "featured": true,
     "seo": {
       "id": 3,
       "metaTitle": "A bug is becoming a meme on the internet",
@@ -4158,7 +4162,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:45:53.000Z",
+    "featured": true,
     "seo": {
       "id": 4,
       "metaTitle": "Beautiful picture",
@@ -5219,7 +5224,8 @@
       }
     },
     "created_at": "2021-03-04T21:41:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:46:37.000Z",
+    "featured": false,
     "seo": {
       "id": 7,
       "metaTitle": "We love Pizza",
@@ -6272,7 +6278,8 @@
       }
     },
     "created_at": "2021-03-08T16:29:49.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T17:46:00.000Z",
+    "featured": false,
     "seo": {
       "id": 9,
       "metaTitle": "Caddy and Let's Encrypt",
@@ -6678,7 +6685,7 @@
     "id": 8,
     "title": "Welcome to the Jingle",
     "description": "The worst crossover film ever made",
-    "content": "Hi.\n\nWhat if Axl Rose starred in a Christmas movie?\n\n---\n- 1\n- 2\n- 3\n\n#### H4\n\nDisappointed the preview isn't live",
+    "content": "Hi.\n\nWhat if Axl Rose starred in a Christmas movie?\n\n---\n- 1\n- 2\n- 3\n\n#### H4\n\nDisappointed the preview isn't live\n\n![mikael-kristenson-3aVlWP-7bg8-unsplash.jpg](/uploads/mikael_kristenson_3a_Vl_WP_7bg8_unsplash_87b03c5431.jpg)\n",
     "publishedAt": "2021-03-01T12:00:00.000Z",
     "status": "published",
     "slug": "welcome-to-the-jingle",
@@ -7165,7 +7172,8 @@
       }
     },
     "created_at": "2021-03-08T20:36:58.000Z",
-    "updated_at": "2021-03-09T17:33:31.000Z",
+    "updated_at": "2021-03-09T19:47:42.000Z",
+    "featured": true,
     "seo": {
       "id": 10,
       "metaTitle": "Welcome to the Jingle",

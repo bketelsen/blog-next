@@ -23,7 +23,7 @@
   },
   "category": {
     "contentPath": "content/categories",
-    "basePath": "/blog/categories"
+    "basePath": "/"
   },
   "author": {
     "contentPath": "content/authors",
@@ -32,5 +32,17 @@
   "image": {
     "contentPath": "content/image",
     "basePath": "/image"
+  },
+  "avatar": {
+    "contentPath": "content/avatar",
+    "basePath": "/avatar"
+  },
+  "shareImage": {
+    "contentPath": "content/share_image",
+    "basePath": "/shareimage"
+  },
+  "picture": {
+    "contentPath": "content/picture",
+    "basePath": "/picture"
   }
 }

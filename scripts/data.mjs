@@ -57,8 +57,8 @@ fs.readFile("data/global.json", function (err, data) {
 
 
 function saveImage(image, config) {
-  const imageConfig = config["image"];
-  const fileName = path.join(imageConfig.contentPath, image.hash + ".mdx")
+
+  const fileName = path.join(config.contentPath, image.hash + ".mdx")
 
   getData(image.url, `./public${image.url}`)
 
@@ -78,8 +78,8 @@ function saveImage(image, config) {
     }
   })
   // create the target directory if it doesn't exist 
-  if (!fs.existsSync(imageConfig.contentPath)) {
-    fs.mkdirSync(imageConfig.contentPath);
+  if (!fs.existsSync(config.contentPath)) {
+    fs.mkdirSync(config.contentPath);
   }
   // write the contents
   fs.writeFileSync(fileName, '---\n' + yaml.dump(image) + '---\n');
@@ -92,22 +92,21 @@ function saveArticle(article, config) {
   const contents = (article) => `
 ---
 title: ${yaml.dump(article.title).trimEnd()}
-excerpt: ${yaml.dump(article.description).trimEnd()}
+excerpt: ${yaml.dump(article.description, { lineWidth: 500 }).trimEnd()}
 image: 
   ${yaml.dump([article.image.hash]).trimEnd()}
 published_at: ${yaml.dump(article.publishedAt).trimEnd()}
 updated_at: ${yaml.dump(article.updated_at).trimEnd()}
 status: ${yaml.dump(article.status).trimEnd()}
-featured: false
+featured: ${yaml.dump(article.featured).trimEnd()}
 category: 
   ${yaml.dump([article.category.slug]).trimEnd()}
 author: 
   ${yaml.dump([article.author.slug]).trimEnd()}
 seo:
   metaTitle: ${yaml.dump(article.seo.metaTitle).trimEnd()}
-  metaDescription: ${yaml.dump(article.seo.metaDescription).trimEnd()}
-  shareImage: 
-    ${yaml.dump([article.seo.shareImage.hash]).trimEnd()}
+  metaDescription: ${yaml.dump(article.seo.metaDescription, { lineWidth: 500 }).trimEnd()}
+share_image: ${yaml.dump(article.seo.shareImage.hash).trimEnd()}
 tags:
   ${article.tags.length ? yaml.dump(article.tags.map((t) => t.slug)).trimEnd() : ``}
 ---
@@ -122,8 +121,8 @@ ${article.content}
   }
   // write the contents
   fs.writeFileSync(fileName, contents(article).trim());
-  saveImage(article.image, config)
-  saveImage(article.seo.shareImage, config)
+  saveImage(article.image, config["image"])
+  saveImage(article.seo.shareImage, config["shareImage"])
 }
 function saveWriter(writer, config) {
   console.log("converting writer", writer.slug)
@@ -152,8 +151,8 @@ avatar:
   }
   // write the contents
   fs.writeFileSync(fileName, contents(writer).trim());
-  saveImage(writer.picture, config)
-  saveImage(writer.avatar, config)
+  saveImage(writer.picture, config["picture"])
+  saveImage(writer.avatar, config["avatar"])
 }
 
 

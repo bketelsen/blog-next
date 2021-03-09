@@ -8,6 +8,7 @@ dependencies:
   autoprefixer: 10.2.4_postcss@8.2.7
   gray-matter: 4.0.2
   image-size: 0.9.3
+  js-yaml: 3.14.1
   next: 10.0.5_react-dom@16.13.1+react@16.13.1
   next-mdx: 0.2.4_c8512ceb4611ea6f457639d97540bec9
   next-mdx-remote: 2.1.3_react-dom@16.13.1+react@16.13.1
@@ -49,7 +50,6 @@ devDependencies:
   styled-components: 5.2.1_react-dom@16.13.1+react@16.13.1
   unified: 9.2.0
   unist-util-visit: 2.0.3
-  yaml: 2.0.0-3
 lockfileVersion: 5.2
 packages:
   /@ampproject/toolbox-core/2.7.4:
@@ -8409,12 +8409,6 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
-  /yaml/2.0.0-3:
-    dev: true
-    engines:
-      node: '>= 10'
-    resolution:
-      integrity: sha512-gvtVaY+/mQ0OsXgaWy2Tf830JuXN7qEUYdXWsuiJVSkMRsBBQ90YVpQQofaURbhoA1xSbLBf7965oH6ddzNbBQ==
   /yocto-queue/0.1.0:
     engines:
       node: '>=10'
@@ -8445,6 +8439,7 @@ specifiers:
   gray-matter: ^4.0.2
   husky: ^4.3.7
   image-size: 0.9.3
+  js-yaml: ^3.14.1
   lint-staged: ^10.5.3
   next: 10.0.5
   next-compose-plugins: ^2.2.1
@@ -8473,4 +8468,3 @@ specifiers:
   tailwindcss: ^2.0.2
   unified: 9.2.0
   unist-util-visit: 2.0.3
-  yaml: ^2.0.0-3
