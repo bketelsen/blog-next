@@ -1,7 +1,6 @@
 import IdealImage from 'react-ideal-image'
 
 export default function Image({ details }) {
-  console.log('image', details)
   return (
     <IdealImage
       placeholder={{ lqip: details.base64.url }}

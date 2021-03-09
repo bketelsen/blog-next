@@ -19,7 +19,6 @@ export default function PostLayout({ children, post, next, prev }) {
   const author = post.relationships.author[0].frontMatter
   const author_url = post.relationships.author[0].url
   const avatar = post.relationships.author[0].relationships.avatar[0].frontMatter
-  console.log('fm', post.relationships.author[0].relationships.avatar[0].frontMatter)
   return (
     <SectionContainer>
       <BlogSeo url={`${siteMetdata.siteUrl}/${category.slug}/${slug}`} post={post} />

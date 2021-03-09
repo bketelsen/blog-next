@@ -5,7 +5,7 @@
   "scripts": {
     "start": "next dev",
     "dev": "next dev",
-    "build": "next build",
+    "build": "node ./scripts/data.mjs && next build",
     "serve": "next start",
     "analyze": "ANALYZE=true Next build"
   },
