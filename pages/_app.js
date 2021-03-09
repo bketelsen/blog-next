@@ -2,6 +2,7 @@ import '@/css/tailwind.css'
 
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
+import { ImageProvider } from 'react-strapi-img'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
 import { MDXProvider } from '@mdx-js/react'
@@ -17,7 +18,15 @@ function MyApp({ Component, pageProps }) {
         </Head>
         <DefaultSeo {...SEO} />
         <LayoutWrapper>
-          <Component {...pageProps} />
+          <ImageProvider
+            prefix={
+              process.env.NODE_ENV === 'production'
+                ? process.env.VERCEL_URL
+                : 'http://localhost:3000'
+            }
+          >
+            <Component {...pageProps} />
+          </ImageProvider>
         </LayoutWrapper>
       </MDXProvider>
     </ThemeProvider>
