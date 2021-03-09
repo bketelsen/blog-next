@@ -2,13 +2,13 @@
   "id": 1,
   "siteName": "Brian Ketelsen",
   "created_at": "2021-03-04T21:41:59.000Z",
-  "updated_at": "2021-03-08T00:58:56.000Z",
+  "updated_at": "2021-03-09T16:24:33.000Z",
   "writer": {
     "id": 3,
     "name": "Brian Ketelsen",
     "email": "mail@bjk.fyi",
     "created_at": "2021-03-07T11:06:53.000Z",
-    "updated_at": "2021-03-07T14:23:55.000Z",
+    "updated_at": "2021-03-09T17:33:31.000Z",
     "twitter": "https://twitter.com/bketelsen",
     "youtube": "https://youtube.com/bketelsen",
     "github": "https://github.com/bketelsen",
@@ -17,10 +17,300 @@
     "jobtitle": "Principle Cloud Developer Advocate",
     "company": "Microsoft",
     "bio": "##  My Checkered Past\n\nblah blah\n\n## Plans\n\nWorld Domination",
+    "slug": "brian-ketelsen",
     "picture": {
-      "id": 12,
+      "id": 24,
+      "name": "me.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 2209,
+      "height": 1474,
+      "formats": {
+        "400": [
+          {
+            "name": "400_me.jpg",
+            "hash": "400_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 400,
+            "height": 267,
+            "size": 9.12,
+            "path": null,
+            "url": "/uploads/400_me_8e389d2784.jpg"
+          },
+          {
+            "name": "400_me.webp",
+            "hash": "400_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 400,
+            "height": 267,
+            "size": 4.97,
+            "path": null,
+            "url": "/uploads/400_me_8e389d2784.webp"
+          }
+        ],
+        "600": [
+          {
+            "name": "600_me.jpg",
+            "hash": "600_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 600,
+            "height": 400,
+            "size": 17.04,
+            "path": null,
+            "url": "/uploads/600_me_8e389d2784.jpg"
+          },
+          {
+            "name": "600_me.webp",
+            "hash": "600_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 600,
+            "height": 400,
+            "size": 8.85,
+            "path": null,
+            "url": "/uploads/600_me_8e389d2784.webp"
+          }
+        ],
+        "800": [
+          {
+            "name": "800_me.jpg",
+            "hash": "800_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 800,
+            "height": 534,
+            "size": 26.67,
+            "path": null,
+            "url": "/uploads/800_me_8e389d2784.jpg"
+          },
+          {
+            "name": "800_me.webp",
+            "hash": "800_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 800,
+            "height": 534,
+            "size": 13.09,
+            "path": null,
+            "url": "/uploads/800_me_8e389d2784.webp"
+          }
+        ],
+        "1000": [
+          {
+            "name": "1000_me.jpg",
+            "hash": "1000_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1000,
+            "height": 667,
+            "size": 37.46,
+            "path": null,
+            "url": "/uploads/1000_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1000_me.webp",
+            "hash": "1000_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1000,
+            "height": 667,
+            "size": 18.19,
+            "path": null,
+            "url": "/uploads/1000_me_8e389d2784.webp"
+          }
+        ],
+        "1200": [
+          {
+            "name": "1200_me.jpg",
+            "hash": "1200_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1200,
+            "height": 801,
+            "size": 50.77,
+            "path": null,
+            "url": "/uploads/1200_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1200_me.webp",
+            "hash": "1200_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1200,
+            "height": 801,
+            "size": 24.4,
+            "path": null,
+            "url": "/uploads/1200_me_8e389d2784.webp"
+          }
+        ],
+        "1400": [
+          {
+            "name": "1400_me.jpg",
+            "hash": "1400_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1400,
+            "height": 934,
+            "size": 65.06,
+            "path": null,
+            "url": "/uploads/1400_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1400_me.webp",
+            "hash": "1400_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1400,
+            "height": 934,
+            "size": 30.76,
+            "path": null,
+            "url": "/uploads/1400_me_8e389d2784.webp"
+          }
+        ],
+        "1600": [
+          {
+            "name": "1600_me.jpg",
+            "hash": "1600_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1600,
+            "height": 1068,
+            "size": 80.43,
+            "path": null,
+            "url": "/uploads/1600_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1600_me.webp",
+            "hash": "1600_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1600,
+            "height": 1068,
+            "size": 37.52,
+            "path": null,
+            "url": "/uploads/1600_me_8e389d2784.webp"
+          }
+        ],
+        "1800": [
+          {
+            "name": "1800_me.jpg",
+            "hash": "1800_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1800,
+            "height": 1201,
+            "size": 97.52,
+            "path": null,
+            "url": "/uploads/1800_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1800_me.webp",
+            "hash": "1800_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1800,
+            "height": 1201,
+            "size": 45.12,
+            "path": null,
+            "url": "/uploads/1800_me_8e389d2784.webp"
+          }
+        ],
+        "2000": [
+          {
+            "name": "2000_me.jpg",
+            "hash": "2000_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2000,
+            "height": 1335,
+            "size": 114.88,
+            "path": null,
+            "url": "/uploads/2000_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2000_me.webp",
+            "hash": "2000_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2000,
+            "height": 1335,
+            "size": 52.34,
+            "path": null,
+            "url": "/uploads/2000_me_8e389d2784.webp"
+          }
+        ],
+        "2200": [
+          {
+            "name": "2200_me.jpg",
+            "hash": "2200_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2200,
+            "height": 1468,
+            "size": 134.42,
+            "path": null,
+            "url": "/uploads/2200_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2200_me.webp",
+            "hash": "2200_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2200,
+            "height": 1468,
+            "size": 60.71,
+            "path": null,
+            "url": "/uploads/2200_me_8e389d2784.webp"
+          }
+        ],
+        "2209": [
+          {
+            "name": "2209_me.jpg",
+            "hash": "2209_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2209,
+            "height": 1474,
+            "size": 130.18,
+            "path": null,
+            "url": "/uploads/2209_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2209_me.webp",
+            "hash": "2209_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2209,
+            "height": 1474,
+            "size": 65.21,
+            "path": null,
+            "url": "/uploads/2209_me_8e389d2784.webp"
+          }
+        ],
+        "base64": {
+          "url": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAcI/8QAJBAAAgIBAwIHAAAAAAAAAAAAAQIDBAAFESEGMQcSExRBUZH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQEAAgMAAAAAAAAAAAAAAAAAARESIUH/2gAMAwEAAhEDEQA/AOXY67uOMY+oumrFGjo0kOnzxvYoe8l7tunm29Qj4X8yhPYWvadoYlCLISqNyAAeAfvHzxhvXaHUGnivZdBPoFOGQIAoKPGGZdh2BO52zTHRfJZWUIwyV25G3HGGTQ//2Q==",
+          "width": 20,
+          "height": 13
+        }
+      },
+      "hash": "me_8e389d2784",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 130.18,
+      "url": "/uploads/me_8e389d2784.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_at": "2021-03-09T16:22:49.000Z",
+      "updated_at": "2021-03-09T16:22:49.000Z"
+    },
+    "avatar": {
+      "id": 26,
       "name": "bri.png",
-      "alternativeText": "Avatar of Brian Ketelsen as Captain America",
+      "alternativeText": "",
       "caption": "",
       "width": 1234,
       "height": 1459,
@@ -28,145 +318,145 @@
         "400": [
           {
             "name": "400_bri.png",
-            "hash": "400_bri_8c0d5c702a",
+            "hash": "400_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 400,
             "height": 473,
             "size": 105.87,
             "path": null,
-            "url": "/uploads/400_bri_8c0d5c702a.png"
+            "url": "/uploads/400_bri_589a3a8cc2.png"
           },
           {
             "name": "400_bri.webp",
-            "hash": "400_bri_8c0d5c702a",
+            "hash": "400_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 400,
             "height": 473,
             "size": 24.5,
             "path": null,
-            "url": "/uploads/400_bri_8c0d5c702a.webp"
+            "url": "/uploads/400_bri_589a3a8cc2.webp"
           }
         ],
         "600": [
           {
             "name": "600_bri.png",
-            "hash": "600_bri_8c0d5c702a",
+            "hash": "600_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 600,
             "height": 709,
             "size": 182.65,
             "path": null,
-            "url": "/uploads/600_bri_8c0d5c702a.png"
+            "url": "/uploads/600_bri_589a3a8cc2.png"
           },
           {
             "name": "600_bri.webp",
-            "hash": "600_bri_8c0d5c702a",
+            "hash": "600_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 600,
             "height": 709,
             "size": 39.4,
             "path": null,
-            "url": "/uploads/600_bri_8c0d5c702a.webp"
+            "url": "/uploads/600_bri_589a3a8cc2.webp"
           }
         ],
         "800": [
           {
             "name": "800_bri.png",
-            "hash": "800_bri_8c0d5c702a",
+            "hash": "800_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 800,
             "height": 946,
             "size": 270.93,
             "path": null,
-            "url": "/uploads/800_bri_8c0d5c702a.png"
+            "url": "/uploads/800_bri_589a3a8cc2.png"
           },
           {
             "name": "800_bri.webp",
-            "hash": "800_bri_8c0d5c702a",
+            "hash": "800_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 800,
             "height": 946,
             "size": 54.5,
             "path": null,
-            "url": "/uploads/800_bri_8c0d5c702a.webp"
+            "url": "/uploads/800_bri_589a3a8cc2.webp"
           }
         ],
         "1000": [
           {
             "name": "1000_bri.png",
-            "hash": "1000_bri_8c0d5c702a",
+            "hash": "1000_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 1000,
             "height": 1182,
             "size": 367.19,
             "path": null,
-            "url": "/uploads/1000_bri_8c0d5c702a.png"
+            "url": "/uploads/1000_bri_589a3a8cc2.png"
           },
           {
             "name": "1000_bri.webp",
-            "hash": "1000_bri_8c0d5c702a",
+            "hash": "1000_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1000,
             "height": 1182,
             "size": 68.17,
             "path": null,
-            "url": "/uploads/1000_bri_8c0d5c702a.webp"
+            "url": "/uploads/1000_bri_589a3a8cc2.webp"
           }
         ],
         "1200": [
           {
             "name": "1200_bri.png",
-            "hash": "1200_bri_8c0d5c702a",
+            "hash": "1200_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 1200,
             "height": 1419,
             "size": 467.09,
             "path": null,
-            "url": "/uploads/1200_bri_8c0d5c702a.png"
+            "url": "/uploads/1200_bri_589a3a8cc2.png"
           },
           {
             "name": "1200_bri.webp",
-            "hash": "1200_bri_8c0d5c702a",
+            "hash": "1200_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1200,
             "height": 1419,
             "size": 83.45,
             "path": null,
-            "url": "/uploads/1200_bri_8c0d5c702a.webp"
+            "url": "/uploads/1200_bri_589a3a8cc2.webp"
           }
         ],
         "1234": [
           {
             "name": "1234_bri.png",
-            "hash": "1234_bri_8c0d5c702a",
+            "hash": "1234_bri_589a3a8cc2",
             "ext": ".png",
             "mime": "image/png",
             "width": 1234,
             "height": 1459,
             "size": 134.65,
             "path": null,
-            "url": "/uploads/1234_bri_8c0d5c702a.png"
+            "url": "/uploads/1234_bri_589a3a8cc2.png"
           },
           {
             "name": "1234_bri.webp",
-            "hash": "1234_bri_8c0d5c702a",
+            "hash": "1234_bri_589a3a8cc2",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1234,
             "height": 1459,
             "size": 71.93,
             "path": null,
-            "url": "/uploads/1234_bri_8c0d5c702a.webp"
+            "url": "/uploads/1234_bri_589a3a8cc2.webp"
           }
         ],
         "base64": {
@@ -175,16 +465,16 @@
           "height": 20
         }
       },
-      "hash": "bri_8c0d5c702a",
+      "hash": "bri_589a3a8cc2",
       "ext": ".png",
       "mime": "image/png",
       "size": 134.65,
-      "url": "/uploads/bri_8c0d5c702a.png",
+      "url": "/uploads/bri_589a3a8cc2.png",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
-      "created_at": "2021-03-07T11:06:14.000Z",
-      "updated_at": "2021-03-07T11:06:41.000Z"
+      "created_at": "2021-03-09T17:33:27.000Z",
+      "updated_at": "2021-03-09T17:33:27.000Z"
     }
   },
   "defaultSeo": {
@@ -192,270 +482,654 @@
     "metaTitle": "News from the Edge",
     "metaDescription": "The home of Brian Ketelsen on the internet.",
     "shareImage": {
-      "id": 14,
-      "name": "social-banner.png",
+      "id": 24,
+      "name": "me.jpg",
       "alternativeText": "",
       "caption": "",
-      "width": 1600,
-      "height": 900,
+      "width": 2209,
+      "height": 1474,
       "formats": {
         "400": [
           {
-            "name": "400_social-banner.png",
-            "hash": "400_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "400_me.jpg",
+            "hash": "400_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 400,
-            "height": 225,
-            "size": 111.21,
+            "height": 267,
+            "size": 9.12,
             "path": null,
-            "url": "/uploads/400_social_banner_df30a9d4b7.png"
+            "url": "/uploads/400_me_8e389d2784.jpg"
           },
           {
-            "name": "400_social-banner.webp",
-            "hash": "400_social_banner_df30a9d4b7",
+            "name": "400_me.webp",
+            "hash": "400_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 400,
-            "height": 225,
-            "size": 5.18,
+            "height": 267,
+            "size": 4.97,
             "path": null,
-            "url": "/uploads/400_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/400_me_8e389d2784.webp"
           }
         ],
         "600": [
           {
-            "name": "600_social-banner.png",
-            "hash": "600_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "600_me.jpg",
+            "hash": "600_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 600,
-            "height": 338,
-            "size": 234.47,
+            "height": 400,
+            "size": 17.04,
             "path": null,
-            "url": "/uploads/600_social_banner_df30a9d4b7.png"
+            "url": "/uploads/600_me_8e389d2784.jpg"
           },
           {
-            "name": "600_social-banner.webp",
-            "hash": "600_social_banner_df30a9d4b7",
+            "name": "600_me.webp",
+            "hash": "600_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 600,
-            "height": 338,
-            "size": 9.37,
+            "height": 400,
+            "size": 8.85,
             "path": null,
-            "url": "/uploads/600_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/600_me_8e389d2784.webp"
           }
         ],
         "800": [
           {
-            "name": "800_social-banner.png",
-            "hash": "800_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "800_me.jpg",
+            "hash": "800_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 800,
-            "height": 450,
-            "size": 394.6,
+            "height": 534,
+            "size": 26.67,
             "path": null,
-            "url": "/uploads/800_social_banner_df30a9d4b7.png"
+            "url": "/uploads/800_me_8e389d2784.jpg"
           },
           {
-            "name": "800_social-banner.webp",
-            "hash": "800_social_banner_df30a9d4b7",
+            "name": "800_me.webp",
+            "hash": "800_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 800,
-            "height": 450,
-            "size": 13.63,
+            "height": 534,
+            "size": 13.09,
             "path": null,
-            "url": "/uploads/800_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/800_me_8e389d2784.webp"
           }
         ],
         "1000": [
           {
-            "name": "1000_social-banner.png",
-            "hash": "1000_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "1000_me.jpg",
+            "hash": "1000_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 1000,
-            "height": 563,
-            "size": 594.65,
+            "height": 667,
+            "size": 37.46,
             "path": null,
-            "url": "/uploads/1000_social_banner_df30a9d4b7.png"
+            "url": "/uploads/1000_me_8e389d2784.jpg"
           },
           {
-            "name": "1000_social-banner.webp",
-            "hash": "1000_social_banner_df30a9d4b7",
+            "name": "1000_me.webp",
+            "hash": "1000_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1000,
-            "height": 563,
-            "size": 18.04,
+            "height": 667,
+            "size": 18.19,
             "path": null,
-            "url": "/uploads/1000_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/1000_me_8e389d2784.webp"
           }
         ],
         "1200": [
           {
-            "name": "1200_social-banner.png",
-            "hash": "1200_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "1200_me.jpg",
+            "hash": "1200_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 1200,
-            "height": 675,
-            "size": 838.52,
+            "height": 801,
+            "size": 50.77,
             "path": null,
-            "url": "/uploads/1200_social_banner_df30a9d4b7.png"
+            "url": "/uploads/1200_me_8e389d2784.jpg"
           },
           {
-            "name": "1200_social-banner.webp",
-            "hash": "1200_social_banner_df30a9d4b7",
+            "name": "1200_me.webp",
+            "hash": "1200_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1200,
-            "height": 675,
-            "size": 22.67,
+            "height": 801,
+            "size": 24.4,
             "path": null,
-            "url": "/uploads/1200_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/1200_me_8e389d2784.webp"
           }
         ],
         "1400": [
           {
-            "name": "1400_social-banner.png",
-            "hash": "1400_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "1400_me.jpg",
+            "hash": "1400_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 1400,
-            "height": 788,
-            "size": 1115.91,
+            "height": 934,
+            "size": 65.06,
             "path": null,
-            "url": "/uploads/1400_social_banner_df30a9d4b7.png"
+            "url": "/uploads/1400_me_8e389d2784.jpg"
           },
           {
-            "name": "1400_social-banner.webp",
-            "hash": "1400_social_banner_df30a9d4b7",
+            "name": "1400_me.webp",
+            "hash": "1400_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1400,
-            "height": 788,
-            "size": 27.36,
+            "height": 934,
+            "size": 30.76,
             "path": null,
-            "url": "/uploads/1400_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/1400_me_8e389d2784.webp"
           }
         ],
         "1600": [
           {
-            "name": "1600_social-banner.png",
-            "hash": "1600_social_banner_df30a9d4b7",
-            "ext": ".png",
-            "mime": "image/png",
+            "name": "1600_me.jpg",
+            "hash": "1600_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
             "width": 1600,
-            "height": 900,
-            "size": 1168.6,
+            "height": 1068,
+            "size": 80.43,
             "path": null,
-            "url": "/uploads/1600_social_banner_df30a9d4b7.png"
+            "url": "/uploads/1600_me_8e389d2784.jpg"
           },
           {
-            "name": "1600_social-banner.webp",
-            "hash": "1600_social_banner_df30a9d4b7",
+            "name": "1600_me.webp",
+            "hash": "1600_me_8e389d2784",
             "ext": ".webp",
             "mime": "image/webp",
             "width": 1600,
-            "height": 900,
-            "size": 33.46,
+            "height": 1068,
+            "size": 37.52,
             "path": null,
-            "url": "/uploads/1600_social_banner_df30a9d4b7.webp"
+            "url": "/uploads/1600_me_8e389d2784.webp"
+          }
+        ],
+        "1800": [
+          {
+            "name": "1800_me.jpg",
+            "hash": "1800_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 1800,
+            "height": 1201,
+            "size": 97.52,
+            "path": null,
+            "url": "/uploads/1800_me_8e389d2784.jpg"
+          },
+          {
+            "name": "1800_me.webp",
+            "hash": "1800_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 1800,
+            "height": 1201,
+            "size": 45.12,
+            "path": null,
+            "url": "/uploads/1800_me_8e389d2784.webp"
+          }
+        ],
+        "2000": [
+          {
+            "name": "2000_me.jpg",
+            "hash": "2000_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2000,
+            "height": 1335,
+            "size": 114.88,
+            "path": null,
+            "url": "/uploads/2000_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2000_me.webp",
+            "hash": "2000_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2000,
+            "height": 1335,
+            "size": 52.34,
+            "path": null,
+            "url": "/uploads/2000_me_8e389d2784.webp"
+          }
+        ],
+        "2200": [
+          {
+            "name": "2200_me.jpg",
+            "hash": "2200_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2200,
+            "height": 1468,
+            "size": 134.42,
+            "path": null,
+            "url": "/uploads/2200_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2200_me.webp",
+            "hash": "2200_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2200,
+            "height": 1468,
+            "size": 60.71,
+            "path": null,
+            "url": "/uploads/2200_me_8e389d2784.webp"
+          }
+        ],
+        "2209": [
+          {
+            "name": "2209_me.jpg",
+            "hash": "2209_me_8e389d2784",
+            "ext": ".jpg",
+            "mime": "image/jpg",
+            "width": 2209,
+            "height": 1474,
+            "size": 130.18,
+            "path": null,
+            "url": "/uploads/2209_me_8e389d2784.jpg"
+          },
+          {
+            "name": "2209_me.webp",
+            "hash": "2209_me_8e389d2784",
+            "ext": ".webp",
+            "mime": "image/webp",
+            "width": 2209,
+            "height": 1474,
+            "size": 65.21,
+            "path": null,
+            "url": "/uploads/2209_me_8e389d2784.webp"
           }
         ],
         "base64": {
-          "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACIklEQVQoz1VTy2oUQRTtej860z0z6Ynj+Mi0kkQMRgmSnaIgZCFRRA1EFyqulEFEsxDRdT5AcJGFCzc+0JU7f+54qmYm6uJQ1bfvPffcRxXGeSQoF6CEgV1tYd48hnz9AOrVHszze3CTXVjCTO5D0pbs8e0jVOfH0EUBISWEECh4L6SQkFJBKw3FU9KYnBQxvxczqBmSzc7uiUwmQklCkaHIngyaUFNokyGNJZHEaHkdm1vb/I4QKv2jPZ3JV8yJZom1dZRJdSQwSWEGv5WF0T4TXrm0hf27LFlHVmEJB8n2yCyCYv6potCJiNDM6FIfmd1QSQh9dBYGMLbCxXYFk51b0KbKQVoH+ocpuZqSFvMeJoXOR3gfiAhrSsTYoKpHGDTLKMxxPHvxHocfDlEtnsXNa3eYqKGIQN+YKxNK/lWYFAlmSaVallnSudc/iaY5jWbQYtxu4seXX9h/d4DRUoufBx+x1D+Rq4ihhmRs7t+8j0eDIHtVL+JMu45ud4ThsRbNcAXXL1/Ft09fcXv3Kfvmce7UGMHXrKIL7zpZSJ5wUpcIFSdpuYcp05jOF1Y3UHaG6PVGqKsBXBzg8/ffePjkJYN8VuYTYejB2TKLKeaTznuouINaZ9JyoUNn9rDswoWKPXIIscaN7R2srW1wKDH321gORDnC/D+QTJjWhHtoOZSQCMsFBljeeYYIbW12lAzyIfBVuTwIqabLfPRCiun5B0HNB8X6ic+TAAAAAElFTkSuQmCC",
+          "url": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAcI/8QAJBAAAgIBAwIHAAAAAAAAAAAAAQIDBAAFESEGMQcSExRBUZH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQEAAgMAAAAAAAAAAAAAAAAAARESIUH/2gAMAwEAAhEDEQA/AOXY67uOMY+oumrFGjo0kOnzxvYoe8l7tunm29Qj4X8yhPYWvadoYlCLISqNyAAeAfvHzxhvXaHUGnivZdBPoFOGQIAoKPGGZdh2BO52zTHRfJZWUIwyV25G3HGGTQ//2Q==",
           "width": 20,
-          "height": 11
+          "height": 13
         }
       },
-      "hash": "social_banner_df30a9d4b7",
-      "ext": ".png",
-      "mime": "image/png",
-      "size": 938.49,
-      "url": "/uploads/social_banner_df30a9d4b7.png",
+      "hash": "me_8e389d2784",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 130.18,
+      "url": "/uploads/me_8e389d2784.jpg",
       "previewUrl": null,
       "provider": "local",
       "provider_metadata": null,
-      "created_at": "2021-03-07T23:50:51.000Z",
-      "updated_at": "2021-03-07T23:50:51.000Z"
+      "created_at": "2021-03-09T16:22:49.000Z",
+      "updated_at": "2021-03-09T16:22:49.000Z"
     }
   },
   "favicon": {
-    "id": 15,
-    "name": "bkpie-white (1).png",
+    "id": 25,
+    "name": "logo.png",
     "alternativeText": "",
     "caption": "",
-    "width": 500,
-    "height": 500,
+    "width": 3238,
+    "height": 3239,
     "formats": {
       "400": [
         {
-          "name": "400_bkpie-white (1).png",
-          "hash": "400_bkpie_white_1_013a59c6fc",
+          "name": "400_logo.png",
+          "hash": "400_logo_9d03aadd1b",
           "ext": ".png",
           "mime": "image/png",
           "width": 400,
           "height": 400,
-          "size": 21.4,
+          "size": 86.22,
           "path": null,
-          "url": "/uploads/400_bkpie_white_1_013a59c6fc.png"
+          "url": "/uploads/400_logo_9d03aadd1b.png"
         },
         {
-          "name": "400_bkpie-white (1).webp",
-          "hash": "400_bkpie_white_1_013a59c6fc",
+          "name": "400_logo.webp",
+          "hash": "400_logo_9d03aadd1b",
           "ext": ".webp",
           "mime": "image/webp",
           "width": 400,
           "height": 400,
-          "size": 4.52,
+          "size": 15.4,
           "path": null,
-          "url": "/uploads/400_bkpie_white_1_013a59c6fc.webp"
+          "url": "/uploads/400_logo_9d03aadd1b.webp"
         }
       ],
-      "500": [
+      "600": [
         {
-          "name": "500_bkpie-white (1).png",
-          "hash": "500_bkpie_white_1_013a59c6fc",
+          "name": "600_logo.png",
+          "hash": "600_logo_9d03aadd1b",
           "ext": ".png",
           "mime": "image/png",
-          "width": 500,
-          "height": 500,
-          "size": 10.68,
+          "width": 600,
+          "height": 600,
+          "size": 143.95,
           "path": null,
-          "url": "/uploads/500_bkpie_white_1_013a59c6fc.png"
+          "url": "/uploads/600_logo_9d03aadd1b.png"
         },
         {
-          "name": "500_bkpie-white (1).webp",
-          "hash": "500_bkpie_white_1_013a59c6fc",
+          "name": "600_logo.webp",
+          "hash": "600_logo_9d03aadd1b",
           "ext": ".webp",
           "mime": "image/webp",
-          "width": 500,
-          "height": 500,
-          "size": 5.92,
+          "width": 600,
+          "height": 600,
+          "size": 24.8,
           "path": null,
-          "url": "/uploads/500_bkpie_white_1_013a59c6fc.webp"
+          "url": "/uploads/600_logo_9d03aadd1b.webp"
+        }
+      ],
+      "800": [
+        {
+          "name": "800_logo.png",
+          "hash": "800_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 800,
+          "height": 800,
+          "size": 202,
+          "path": null,
+          "url": "/uploads/800_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "800_logo.webp",
+          "hash": "800_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 800,
+          "height": 800,
+          "size": 34.31,
+          "path": null,
+          "url": "/uploads/800_logo_9d03aadd1b.webp"
+        }
+      ],
+      "1000": [
+        {
+          "name": "1000_logo.png",
+          "hash": "1000_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1000,
+          "height": 1000,
+          "size": 262.26,
+          "path": null,
+          "url": "/uploads/1000_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "1000_logo.webp",
+          "hash": "1000_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 1000,
+          "height": 1000,
+          "size": 43.77,
+          "path": null,
+          "url": "/uploads/1000_logo_9d03aadd1b.webp"
+        }
+      ],
+      "1200": [
+        {
+          "name": "1200_logo.png",
+          "hash": "1200_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1200,
+          "height": 1200,
+          "size": 331.84,
+          "path": null,
+          "url": "/uploads/1200_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "1200_logo.webp",
+          "hash": "1200_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 1200,
+          "height": 1200,
+          "size": 53.13,
+          "path": null,
+          "url": "/uploads/1200_logo_9d03aadd1b.webp"
+        }
+      ],
+      "1400": [
+        {
+          "name": "1400_logo.png",
+          "hash": "1400_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1400,
+          "height": 1400,
+          "size": 399.12,
+          "path": null,
+          "url": "/uploads/1400_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "1400_logo.webp",
+          "hash": "1400_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 1400,
+          "height": 1400,
+          "size": 62.86,
+          "path": null,
+          "url": "/uploads/1400_logo_9d03aadd1b.webp"
+        }
+      ],
+      "1600": [
+        {
+          "name": "1600_logo.png",
+          "hash": "1600_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1600,
+          "height": 1600,
+          "size": 457,
+          "path": null,
+          "url": "/uploads/1600_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "1600_logo.webp",
+          "hash": "1600_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 1600,
+          "height": 1600,
+          "size": 72.54,
+          "path": null,
+          "url": "/uploads/1600_logo_9d03aadd1b.webp"
+        }
+      ],
+      "1800": [
+        {
+          "name": "1800_logo.png",
+          "hash": "1800_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 1800,
+          "height": 1801,
+          "size": 545.46,
+          "path": null,
+          "url": "/uploads/1800_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "1800_logo.webp",
+          "hash": "1800_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 1800,
+          "height": 1801,
+          "size": 82.04,
+          "path": null,
+          "url": "/uploads/1800_logo_9d03aadd1b.webp"
+        }
+      ],
+      "2000": [
+        {
+          "name": "2000_logo.png",
+          "hash": "2000_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 2000,
+          "height": 2001,
+          "size": 620.05,
+          "path": null,
+          "url": "/uploads/2000_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "2000_logo.webp",
+          "hash": "2000_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 2000,
+          "height": 2001,
+          "size": 92.09,
+          "path": null,
+          "url": "/uploads/2000_logo_9d03aadd1b.webp"
+        }
+      ],
+      "2200": [
+        {
+          "name": "2200_logo.png",
+          "hash": "2200_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 2200,
+          "height": 2201,
+          "size": 714.93,
+          "path": null,
+          "url": "/uploads/2200_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "2200_logo.webp",
+          "hash": "2200_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 2200,
+          "height": 2201,
+          "size": 102.42,
+          "path": null,
+          "url": "/uploads/2200_logo_9d03aadd1b.webp"
+        }
+      ],
+      "2400": [
+        {
+          "name": "2400_logo.png",
+          "hash": "2400_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 2400,
+          "height": 2401,
+          "size": 792.63,
+          "path": null,
+          "url": "/uploads/2400_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "2400_logo.webp",
+          "hash": "2400_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 2400,
+          "height": 2401,
+          "size": 113.38,
+          "path": null,
+          "url": "/uploads/2400_logo_9d03aadd1b.webp"
+        }
+      ],
+      "2600": [
+        {
+          "name": "2600_logo.png",
+          "hash": "2600_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 2600,
+          "height": 2601,
+          "size": 877.47,
+          "path": null,
+          "url": "/uploads/2600_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "2600_logo.webp",
+          "hash": "2600_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 2600,
+          "height": 2601,
+          "size": 122.37,
+          "path": null,
+          "url": "/uploads/2600_logo_9d03aadd1b.webp"
+        }
+      ],
+      "2800": [
+        {
+          "name": "2800_logo.png",
+          "hash": "2800_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 2800,
+          "height": 2801,
+          "size": 975.93,
+          "path": null,
+          "url": "/uploads/2800_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "2800_logo.webp",
+          "hash": "2800_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 2800,
+          "height": 2801,
+          "size": 133.31,
+          "path": null,
+          "url": "/uploads/2800_logo_9d03aadd1b.webp"
+        }
+      ],
+      "3000": [
+        {
+          "name": "3000_logo.png",
+          "hash": "3000_logo_9d03aadd1b",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 3000,
+          "height": 3001,
+          "size": 1049.69,
+          "path": null,
+          "url": "/uploads/3000_logo_9d03aadd1b.png"
+        },
+        {
+          "name": "3000_logo.webp",
+          "hash": "3000_logo_9d03aadd1b",
+          "ext": ".webp",
+          "mime": "image/webp",
+          "width": 3000,
+          "height": 3001,
+          "size": 143.37,
+          "path": null,
+          "url": "/uploads/3000_logo_9d03aadd1b.webp"
         }
       ],
       "base64": {
-        "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACB0lEQVQ4y8WU22sTURDG888V8UmbUmnUtlJQUBQV0RdffOqzIOKDKC2+mKZpLjQptgpSivFWsNRWwSCkKpWku7k2yW52z8+zG0+STZpUUXFgds+yM9/5vplzxsdfNt8/BxRCuXDfcoUtmu6svf8OAVTBam3ZEshuZzrfjquNxAGoXYBtMCdB2U5RsFvuTO4P6vOCtQPLJiQ+VrmbKnEyqHFmXuf+6xIr6RqGRV/5XobSlcSHbysMzRYYCdU5HYdTMZuRuTpDMwW5Ua1VgnZmD0N+Fh5SOyaBoM7EIkwlaQJKn0zAeFxIthofci5NN+dAhqoWFQPORXT8YZvLyw2S77/z4E2ee68KUnKeKQk6HDK5liy08jrr2APo7Hh9qcBwGG48NUh9+kZ4I8d2JuOCjsZgdL7O9PNyB8MBgKYluJrI419wAOu8TH8ltpll/fMXHq1rjEnAE2GTW89Kv8JQUGvApbjuyrr4xGbuXY47qSLTqxVuvyhydgmOBevcXD5EsqLvWFqzmAxpsrOCcdmYQKzZlAlZv0DE4kJ0j+y+N6evZHUUIls1jsxo+INVAlGLsUiD44/3OTq7x1rG8MT2kdxxSOXDtGFjt8HCZonzUZ0rizqJ7TJbWQu7I3bwwe66LcpKhqDa8Ma1r96gu9wFqoaB+usOC/Ebw6FXvujpZEvqfxuwf2o/AMvd8gi1qc8jAAAAAElFTkSuQmCC",
+        "url": "data:image/png;base64,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",
         "width": 20,
         "height": 20
       }
     },
-    "hash": "bkpie_white_1_013a59c6fc",
+    "hash": "logo_9d03aadd1b",
     "ext": ".png",
     "mime": "image/png",
-    "size": 10.68,
-    "url": "/uploads/bkpie_white_1_013a59c6fc.png",
+    "size": 404.99,
+    "url": "/uploads/logo_9d03aadd1b.png",
     "previewUrl": null,
     "provider": "local",
     "provider_metadata": null,
-    "created_at": "2021-03-07T23:56:28.000Z",
-    "updated_at": "2021-03-07T23:56:28.000Z"
+    "created_at": "2021-03-09T16:24:21.000Z",
+    "updated_at": "2021-03-09T16:24:21.000Z"
   }
 }
