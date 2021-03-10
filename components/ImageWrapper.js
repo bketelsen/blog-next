@@ -1,14 +1,40 @@
 import Image from 'next/image'
-export default function ImageWrapper({ details }) {
+export default function ImageWrapper({ size, details }) {
+  const responsive = getSize(size, details)
   return (
     <Image
       placeholder={{ lqip: details.base64.url }}
       alt={details.alternativeText}
-      height={details.height}
-      width={details.width}
-      src={details.url}
+      height={responsive.height}
+      width={responsive.width}
+      src={responsive.url}
     />
   )
+}
+export const sizes = {
+  small: '400',
+  medium: '800',
+  large: '1200',
+  xl: '1600',
+}
+const getSize = (size, details) => {
+  const keys = Object.keys(details.formats)
+  var responsive = {}
+
+  keys.forEach(function (f) {
+    if (size == f) {
+      if (Array.isArray(details.formats[f])) {
+        return details.formats[f].map((s) => {
+          if (s.ext === '.webp') {
+            responsive = s
+          }
+        })
+      } else {
+        console.log('not found!!')
+      }
+    }
+  })
+  return responsive
 }
 
 const sourceSet = (details) => {

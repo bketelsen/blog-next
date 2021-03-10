@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import ImageWrapper, { sizes } from './ImageWrapper'
+
 import Link from '@/components/Link'
 import siteMetadata from '@/data/siteMetadata'
 
@@ -7,10 +8,7 @@ const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 const Card = ({ article }) => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
     <div className="flex-shrink-0">
-      <Image
-        {...article.relationships.image[0].frontMatter}
-        src={article.relationships.image[0].frontMatter.url}
-      />
+      <ImageWrapper size={sizes.small} details={article.relationships.image[0].frontMatter} />
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">
