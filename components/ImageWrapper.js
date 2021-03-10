@@ -3,7 +3,6 @@ export default function ImageWrapper({ size, details }) {
   const responsive = getSize(size, details)
   return (
     <Image
-      placeholder={{ lqip: details.base64.url }}
       alt={details.alternativeText}
       height={responsive.height}
       width={responsive.width}
