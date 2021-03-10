@@ -1,5 +1,5 @@
 import Image from 'next/image'
-export default function ImageWrapper({ size, details }) {
+export default function ImageWrapper({ size, details, className }) {
   const responsive = getSize(size, details)
   return (
     <Image
@@ -7,7 +7,7 @@ export default function ImageWrapper({ size, details }) {
       height={responsive.height}
       width={responsive.width}
       src={responsive.url}
-      className="object-fill"
+      className={className}
     />
   )
 }

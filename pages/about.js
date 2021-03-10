@@ -1,3 +1,5 @@
+import ImageWrapper, { sizes } from '@/components/ImageWrapper'
+
 import MDXComponents from '@/components/MDXComponents'
 import { PageSeo } from '@/components/SEO'
 import { RenderOptions } from '@/lib/render'
@@ -37,7 +39,11 @@ export default function About({ bio }) {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
-            <img src={global.writer.picture.url} alt="avatar" className="w-48 h-48 rounded-full" />
+            <ImageWrapper
+              size={sizes.small}
+              details={global.writer.picture}
+              className="w-48 h-48 rounded-full"
+            />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
               {global.writer.name}
             </h3>
