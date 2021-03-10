@@ -10,7 +10,7 @@ export default function ListLayout({ posts, title }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((post) => {
     const searchContent =
-      post.frontMatter.title + post.frontMatter.excerpt + post.relationships.category[0].name
+      post.title + post.description + post.category.name
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
@@ -48,9 +48,7 @@ export default function ListLayout({ posts, title }) {
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {filteredBlogPosts.map((post) => {
-            const { slug, published_at, title, excerpt } = post.frontMatter
-            const category = post.relationships.category[0].frontMatter
-            const category_url = post.relationships.category[0].url
+            const { slug, published_at, title, description } = post
             return (
               <li key={post.slug} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
@@ -68,22 +66,22 @@ export default function ListLayout({ posts, title }) {
                   <div className="space-y-3 xl:col-span-3">
                     <div>
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
-                        <Link href={post.url} className="text-gray-900 dark:text-gray-100">
+                        <Link href={`/${post.category.slug}/${post.slug}`} className="text-gray-900 dark:text-gray-100">
                           {title}
                         </Link>
                       </h3>
                       <div className="flex flex-wrap">
-                        <Category key={category_url} text={category.name} slug={category_url} />
+                        <Category key={post.category.slug} text={post.category.name} slug={post.category.slug} />
 
                         {post.tags
                           ? post.tags.map((tag) => (
-                              <Tag key={tag} text={tag.name} slug={tag.slug} />
-                            ))
+                            <Tag key={tag} text={tag.name} slug={tag.slug} />
+                          ))
                           : ''}
                       </div>
                     </div>
                     <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                      {excerpt}
+                      {description}
                     </div>
                   </div>
                 </article>

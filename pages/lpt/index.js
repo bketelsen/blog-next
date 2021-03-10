@@ -1,35 +1,28 @@
 import ListLayout from '@/layouts/ListLayout'
-import MDXComponents from '@/components/MDXComponents'
 import { PageSeo } from '@/components/SEO'
-import { getAllMdxNodes } from 'next-mdx'
+import { fetchAPI } from "@/lib/api";
 import global from '@/data/global'
 import siteMetadata from '@/data/siteMetadata'
 
 export async function getStaticProps({ params }) {
-  const posts = await getAllMdxNodes('lpt', {
-    components: MDXComponents,
+  const articles = await fetchAPI("/articles");
+  const filteredArticles = articles.filter((a) => {
+    return a.category.slug === 'lpt'
   })
-
-  /* rss
-  if (!page) {
-    const rss = generateRss(articles, `/${params.category}`, `tags/${params.category}/index.xml`)
-    const rssPath = path.join(root, 'public', 'tags', params.category)
-    fs.mkdirSync(rssPath, { recursive: true })
-    fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
+  return {
+    props: { posts: filteredArticles }
   }
-*/
-  return { props: { posts: posts } }
 }
 
 export default function Blog({ posts }) {
   return (
     <>
       <PageSeo
-        title={`Life Pro Tips - ${global.writer.name}`}
+        title={`Life ProTips - ${global.writer.name}`}
         description={global.defaultSeo.metaDescription}
         url={`${siteMetadata.siteUrl}/lpt`}
       />
-      {posts && <ListLayout posts={posts} title={'Life Pro Tips'} />}
+      {posts && <ListLayout posts={posts} title={'Life ProTips'} />}
     </>
   )
 }

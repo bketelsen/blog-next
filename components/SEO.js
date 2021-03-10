@@ -50,34 +50,34 @@ export const PageSeo = ({ url, title, description }) => {
 }
 
 export const BlogSeo = ({ url, post }) => {
-  const pubDate = new Date(post.frontMatter.published_at).toISOString()
-  const modifiedAt = new Date(post.frontMatter.updated_at || pubDate).toISOString()
-  let imagesArr = [post.frontMatter.share_image.url]
+  const pubDate = new Date(post.published_at).toISOString()
+  const modifiedAt = new Date(post.updated_at || pubDate).toISOString()
+  let imagesArr = [post.seo.shareImage.url]
 
   const featuredImages = imagesArr.map((img) => {
     return {
       url: `${siteMetadata.siteUrl}${img}`,
-      alt: post.frontMatter.share_image.alternativeText,
+      alt: post.seo.shareImage.alternativeText,
     }
   })
 
   return (
     <>
       <NextSeo
-        title={`${post.frontMatter.seo.metaTitle} – ${global.siteName}`}
+        title={`${post.seo.metaTitle} – ${global.siteName}`}
         description={post.description}
         canonical={url}
         openGraph={{
           type: 'article',
           article: {
-            publishedTime: post.frontMatter.published_at,
+            publishedTime: post.published_at,
             modifiedTime: modifiedAt,
             authors: [`${siteMetadata.siteUrl}/about`],
-            tags: [post.relationships.category[0].name],
+            tags: [post.category.name],
           },
           url,
-          title: `${post.frontMatter.seo.metaTitle}`,
-          description: post.frontMatter.seo.metaDescription,
+          title: `${post.seo.metaTitle}`,
+          description: post.seo.metaDescription,
           images: featuredImages,
         }}
         additionalMetaTags={[
@@ -89,12 +89,12 @@ export const BlogSeo = ({ url, post }) => {
       />
       <ArticleJsonLd
         authorName={global.writer.name}
-        dateModified={post.frontMatter.published_at}
+        dateModified={post.published_at}
         datePublished={modifiedAt}
-        description={post.frontMatter.seo.metaDescription}
+        description={post.seo.metaDescription}
         images={featuredImages}
         publisherName={global.writer.name}
-        title={post.frontMatter.seo.metaTitle}
+        title={post.seo.metaTitle}
         url={url}
       />
     </>

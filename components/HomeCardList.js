@@ -16,7 +16,7 @@ export default function PageTitle({ articles, title, subTitle }) {
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
           {articles.map((article) => {
-            return <Card key={article.url} article={article} />
+            return <Card key={article.slug} article={article} />
           })}
         </div>
       </div>

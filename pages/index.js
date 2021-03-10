@@ -1,22 +1,24 @@
 import HomeCardList from '@/components/HomeCardList'
 import Link from '@/components/Link'
 import { PageSeo } from '@/components/SEO'
-import { getAllMdxNodes } from 'next-mdx'
+import { fetchAPI } from "@/lib/api";
 import global from '@/data/global'
 import siteMetadata from '@/data/siteMetadata'
 
 const MAX_DISPLAY = 3
 
 export async function getStaticProps() {
-  const posts = await getAllMdxNodes('blog')
-
+  // Run API calls in parallel
+  const [articles, categories, homepage] = await Promise.all([
+    fetchAPI("/articles"),
+    fetchAPI("/categories"),
+  ]);
   return {
-    props: {
-      posts: posts.filter((post) => post.frontMatter.featured),
-    },
-  }
+    props: { articles, categories },
+    revalidate: 1,
+  };
 }
-export default function Home({ posts }) {
+export default function Home({ articles, categories }) {
   return (
     <>
       <PageSeo
@@ -26,7 +28,7 @@ export default function Home({ posts }) {
       />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <HomeCardList
-          articles={posts.slice(0, MAX_DISPLAY)}
+          articles={articles.slice(0, MAX_DISPLAY)}
           title={global.defaultSeo.metaTitle}
           subTitle={global.defaultSeo.metaDescription}
         />
@@ -78,12 +80,12 @@ export default function Home({ posts }) {
               className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
               aria-label="all projects"
             >
-              Projects &rarr;
+              Pr  ojects &rarr;
             </Link>
           </button>
         </span>
       </div>
-      {posts.length > MAX_DISPLAY && (
+      {articles.length > MAX_DISPLAY && (
         <div className="flex justify-center text-base font-medium leading-6">
           <Link
             href="/blog"

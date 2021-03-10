@@ -1,13 +1,6 @@
-const generateSitemap = require('./scripts/generate-sitemap')
-
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
-module.exports = withBundleAnalyzer({
-  pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  experimental: {
-    modern: true,
+module.exports = {
+  images: {
+    domains: ['res.cloudinary.com'],
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
@@ -27,18 +20,8 @@ module.exports = withBundleAnalyzer({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     })
-    if (isServer) {
-      generateSitemap()
-    }
-    if (!dev && !isServer) {
-      // Replace React with Preact only in client production build
-      Object.assign(config.resolve.alias, {
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
-      })
-    }
 
     return config
-  },
-})
+  }
+
+}
