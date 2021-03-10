@@ -9,6 +9,12 @@
     "sortBy": "date",
     "sortOrder": "desc"
   },
+  "byte": {
+    "contentPath": "content/byte",
+    "basePath": "/byte",
+    "sortBy": "date",
+    "sortOrder": "desc"
+  },
   "lpt": {
     "contentPath": "content/lpt",
     "basePath": "/lpt",

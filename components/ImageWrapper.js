@@ -7,6 +7,7 @@ export default function ImageWrapper({ size, details }) {
       height={responsive.height}
       width={responsive.width}
       src={responsive.url}
+      className="object-fill"
     />
   )
 }

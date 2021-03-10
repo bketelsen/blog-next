@@ -1,16 +1,14 @@
-import Logo from '@/data/logo.svg'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
 import Footer from './Footer'
+import Link from './Link'
+import Logo from '@/data/logo.svg'
 import MobileNav from './MobileNav'
+import SectionContainer from './SectionContainer'
 import ThemeSwitch from './ThemeSwitch'
 import categories from '@/data/categories'
 import global from '@/data/global'
 
 const LayoutWrapper = ({ children }) => {
-  const cats = categories.filter(
-    (cat) =>  cat.slug !== 'page'
-  )
+  const cats = categories.filter((cat) => cat.navigation === true)
   return (
     <SectionContainer>
       <div className="flex flex-col justify-between h-screen">
@@ -22,10 +20,7 @@ const LayoutWrapper = ({ children }) => {
                   <Logo />
                 </div>
 
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {global.siteName}
-                  </div>
-
+                <div className="hidden h-6 text-2xl font-semibold sm:block">{global.siteName}</div>
               </div>
             </Link>
           </div>
@@ -41,13 +36,13 @@ const LayoutWrapper = ({ children }) => {
                 </Link>
               ))}
 
-                <Link
-                  key='about'
-                  href='/about'
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
-                >
-                  About
-                </Link>
+              <Link
+                key="about"
+                href="/about"
+                className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+              >
+                About
+              </Link>
             </div>
             <ThemeSwitch />
             <MobileNav />

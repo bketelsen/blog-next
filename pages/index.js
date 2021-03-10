@@ -31,6 +31,58 @@ export default function Home({ posts }) {
           subTitle={global.defaultSeo.metaDescription}
         />
       </div>
+      <div className="pt-4 flex justify-center">
+        <span className="relative z-0 inline-flex shadow-sm rounded-md">
+          <button
+            type="button"
+            className="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          >
+            <Link
+              href="/blog"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+              aria-label="all posts"
+            >
+              Articles &rarr;
+            </Link>
+          </button>
+          <button
+            type="button"
+            className="-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          >
+            <Link
+              href="/bytes"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+              aria-label="all bytes"
+            >
+              Bytes &rarr;
+            </Link>
+          </button>
+          <button
+            type="button"
+            className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          >
+            <Link
+              href="/lpt"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+              aria-label="all life pro tips"
+            >
+              Life Pro Tips &rarr;
+            </Link>
+          </button>
+          <button
+            type="button"
+            className="-ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500"
+          >
+            <Link
+              href="/blog"
+              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+              aria-label="all projects"
+            >
+              Projects &rarr;
+            </Link>
+          </button>
+        </span>
+      </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-center text-base font-medium leading-6">
           <Link

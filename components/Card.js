@@ -8,7 +8,7 @@ const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 const Card = ({ article }) => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
     <div className="flex-shrink-0">
-      <ImageWrapper size={sizes.small} details={article.relationships.image[0].frontMatter} />
+      <ImageWrapper size={sizes.medium} details={article.relationships.image[0].frontMatter} />
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">
@@ -37,11 +37,11 @@ const Card = ({ article }) => (
               ))
             : null}
         </div>
-        <div className="ml-3">
+        <div>
           <p className="text-sm font-medium text-gray-900">
             <a href="/about" className="hover:underline">
               {article.relationships.author.length
-                ? article.relationships.author.map((author, index) => author.name)
+                ? article.relationships.author.map((author, index) => author.frontMatter.name)
                 : null}
             </a>
           </p>

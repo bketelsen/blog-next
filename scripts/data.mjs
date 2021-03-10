@@ -163,6 +163,7 @@ function saveCategory(category, config) {
 ---
 name: ${yaml.dump(category.name).trimEnd()}
 plural: ${yaml.dump(category.plural).trimEnd()}
+navigation: ${yaml.dump(category.navigation).trimEnd()}
 ---`
   const categoryConfig = config["category"];
   const fileName = path.join(categoryConfig.contentPath, category.slug + ".mdx")
