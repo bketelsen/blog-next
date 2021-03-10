@@ -21,7 +21,7 @@ export default function Footer() {
           <div>{`© ${new Date().getFullYear()}`}</div>
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://github.com/bketelsen/tailwind-nextjs-starter-blog">
+          <Link href="https://github.com/bketelsen/blog-next">
             View on GitHub
           </Link>
         </div>
